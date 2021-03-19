@@ -1,0 +1,41 @@
+{%
+  set faq = [
+    {
+      title: 'At vero eos et accusamus et iustosds odio?',
+      desc: '<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.</p>'
+    },
+    {
+      title: 'Was gehört in eine Facharbeit?',
+      desc: '
+        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio.</p>
+        <p>1. Deckblatt 2. Inhaltsverzeichnis 3. Einleitung 4. Darstellung des Facharbeitsthemas (= Hauptteil) 5. Fazit 6. Anhang 7. Eigenständigkeitserklärung.</p>
+      '
+    },
+    {
+      title: 'Wie lange braucht man, um eine Facharbeit zu schreiben??',
+      desc: '
+        <p>Diese Frage kann nicht pauschal beantwortet werden, da sich sowohl Deine Motivation als auch Deine Erfahrung bzw. Dein Wissen bezüglich der Facharbeit auf den Arbeitsprozess auswirken. Derweil arbeiten unsere Autoren höchst effizient und liefern Deine wissenschaftliche Arbeit in möglichst kurzer Zeit.</p>
+      '
+    }
+  ]
+%}
+
+<!-- begin section-faq -->
+<section class="section-faq">
+  <div class="container">
+    <h2 class="h2 section-faq__title">FAQ</h2>
+    <ul class="accordion js-acc">
+      {% for item in faq %}
+      <li class="accordion__item js-acc-item">
+        <button type="button" class="accordion__btn js-acc-btn">
+          <span class="accordion__title">{{ item.title }}</span>
+          <span type="button" class="accordion__icon">{{ mixins.icon('chevron-up') }}</span>
+        </button>
+        <div class="accordion__desc js-acc-desc">{{ item.desc | safe }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- end section-faq -->

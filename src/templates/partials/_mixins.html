@@ -1,0 +1,60 @@
+{% macro icon(i) %}
+<svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+{% endmacro %}
+
+{% macro select(obj) %}
+<div class="select js-select">
+  <select name="{{ obj.name }}">
+    <option value="" selected disabled>{{ obj.placeholder }}</option>
+    {% for option in obj.options %}
+    <option value="{{ option.value }}">{{ option.text }}</option>
+    {% endfor %}
+  </select>
+</div>
+{% endmacro %}
+
+{% macro counter(obj) %}
+<div class="field-counter js-field-counter">
+  <button
+    type="button"
+    class="field-counter__btn field-counter__btn_dec js-field-counter-dec"
+  ></button>
+  <input
+    type="number"
+    class="field-counter__input js-field-counter-input"
+    name="{{ obj.name }}"
+    min="{{ obj.min }}"
+    max="{{ obj.max }}"
+    value="{{ obj.value }}"
+  />
+   <button
+    type="button"
+    class="field-counter__btn field-counter__btn_inc js-field-counter-inc"
+  ></button>
+</div>
+
+{% endmacro %}
+
+{% macro calendar(obj) %}
+<div class="field-calendar">
+  <input
+    name="{{ obj.name }}"
+    type="text"
+  />
+</div>
+
+{% endmacro %}
+
+
+{% macro dropdown(onj) %}
+<div class="dropdown">
+  <button type="button" class="dropdown__button">{{ obj.placeholder }}</button>
+  <ul class="dropdown__list">
+    {% for link in obj.link %}
+    <li class="dropdown__item">
+      <a href="#" class="dropdown__link">{{ link }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endmacro %}

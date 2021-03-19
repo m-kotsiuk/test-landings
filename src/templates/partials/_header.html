@@ -1,0 +1,60 @@
+{%
+  set menuItems = [
+    {
+      icon: 'search-alt'
+    },
+    {
+      icon: 'mobile-vibration'
+    },
+    {
+      text: 'About'
+    },
+    {
+      text: 'Product'
+    },
+    {
+      text: 'FAQ'
+    },
+    {
+      text: 'Contact'
+    }
+  ]
+%}
+
+<!-- begin header -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__left">
+        <a href="#" class="header__logo">
+          <img src="img/logo.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="header__right">
+
+        <div class="menu header__menu js-menu">
+          <ul class="menu menu__inner">
+            {% for item in menuItems %}
+            {% set withIcon = ' menu__link_icon' if item.icon else '' %}
+            <li class="menu__item">
+              <a href="#" class="menu__link{{ withIcon }}">{% if item.icon %}{{  mixins.icon(item.icon) }}{% endif %}{{ item.text }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="menu__btns">
+            <button type="button" class="button js-modal-btn" data-modal="modal-1">Download</button>
+            <a href="#" class="button button_secondary">Sign up</a>
+          </div>
+        </div>
+
+        <button type="button" class="burger header__burger js-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->

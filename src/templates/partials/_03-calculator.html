@@ -1,0 +1,149 @@
+{%
+  set rows = [
+    {
+      small: true,
+      fields: [
+        {
+          type: 'select',
+          name: 'colors',
+          placeholder: 'Colors',
+          options: [
+            {
+              value: 'red',
+              text: 'red'
+            },
+            {
+              value: 'green',
+              text: 'green'
+            },
+            {
+              value: 'green',
+              text: 'green'
+            }
+          ]
+        },
+        {
+          type: 'select',
+          name: 'options',
+          placeholder: 'Options',
+          options: [
+            {
+              value: '100',
+              text: '100%'
+            },
+            {
+              value: '150',
+              text: '150%'
+            },
+            {
+              value: '200',
+              text: '200%'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      small: true,
+      fields: [
+        {
+          type: 'counter',
+          name: 'amount',
+          min: 1,
+          max: 100,
+          value: 90
+        },
+        {
+          type: 'calendar',
+          name: 'date'
+        }
+      ]
+    },
+    {
+      fields: [
+        {
+          type: 'select',
+          name: 'city',
+          placeholder: 'City',
+          options: [
+            {
+              value: 'Kyiv',
+              text: 'Kyiv'
+            },
+            {
+              value: 'Odessa',
+              text: 'Odessa'
+            },
+            {
+              value: 'Rivne',
+              text: 'Rivne'
+            },
+            {
+              value: 'Lviv',
+              text: 'Lviv'
+            }
+          ]
+        },
+         {
+          type: 'select',
+          name: 'delivery',
+          placeholder: 'Delivery',
+          options: [
+            {
+              value: 'New Post',
+              text: 'New Post'
+            },
+            {
+              value: 'Ukrposhta',
+              text: 'Ukrposhta'
+            },
+            {
+              value: 'Pickup',
+              text: 'Pickup'
+            }
+          ]
+        }
+      ]
+    }
+  ]
+%}
+
+<!-- begin section-calculator-->
+<section class="section-calculator">
+  <div class="conatiner">
+    <div class="section-calculator__inner">
+      <div class="calculator">
+        <div class="calculator__inner">
+          <h2 class="h2 calculator__title">Calculator</h2>
+          <div class="calculator__desc">
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
+          </div>
+          <div class="calculator__form">
+            <form>
+              <div class="calculator__form-inner">
+
+                <div class="calcutator__controls">
+                  {% for row in rows %}
+                  <div class="calculator__row{% if row.small %} calculator__row_small{% endif %}">
+                    {% for field in row.fields %}
+                      {{ mixins[field.type](field) }}
+                    {% endfor %}
+                  </div>
+                  {% endfor %}
+                </div>
+
+                <div class="calculator__submit">
+                  <div class="calculator__total"><span>$</span><span>56.25</span</div>
+                  <div class="calculator__btn">
+                    <button type="submit" class="button">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section-calculator -->

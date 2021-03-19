@@ -1,0 +1,54 @@
+
+
+<!-- begin section-reviews -->
+<section class="section-reviews">
+  <div class="container">
+    <div class="section-reviews__inner">
+      <h2 class="h2 section-reviews__title">Reviews</h2>
+      <h3 class="section-reviews__subtitle">Nam libero tempore, cum soluta nobis est</h3>
+      <div class="slider-reviews">
+
+        <div class="swiper-container slider-reviews__inner">
+          <div class="swiper-wrapper slider-reviews__wrapper">
+            {% for i in range(0, 12) %}
+            <div class="swiper-slide testimonial slider-reviews__slide">
+              <div class="testimonial__top">
+                <div class="testimonial__quote">
+                  {{ mixins.icon('quote') }}
+                </div>
+                <div class="testimonial__rating">
+                  <div class="testimonial__rating-score">5.0</div>
+
+                  <div class="testimonial__rating-stars">
+                    {% for i in range(0, 5) %}
+                    {{ mixins.icon('star') }}
+                    {% endfor %}
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="testimonial__text">
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam.</p>
+              </div>
+
+              <div class="testimonial__bottom">
+                <div class="testimonial__autor">
+                  <div class="testimonial__logo">{{ mixins.icon('user') }}</div>
+                  <div class="testimonial__text">ID: 21015</div>
+                </div>
+                <div class="testimonial__category">Category|Subcategory</div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="slider-reviews__btn">
+          <a href="#" class="link">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section-reviews -->

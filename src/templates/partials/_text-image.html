@@ -1,0 +1,67 @@
+<!-- begin text-image -->
+<section class="text-image">
+  <div class="container">
+    <div class="text-image__inner">
+
+      <div class="text-image__text">
+        {% if block.title %}
+          {% if block.primary %}
+          <h1 class="h1">{{ block.text.title | safe }}</h1>
+          {% else %}
+          <h2 class="h2">{{ block.text.title | safe }}</h2>
+          {% endif %}
+        {% endif %}
+
+        {% if block.text.text  %}
+        <div class="text-image__text-inner">
+          {{ block.text.text | safe }}
+        </div>
+        {% endif %}
+
+        {% if block.text.btn  %}
+        <div class="text-image__btn">
+          <button type="button" class="button"></button>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="text-image__image">
+        {% if block.img.img %}
+        <div class="text-image__image-inner">
+          <img
+            src="{{ block.img.img.mob }}"
+            srcset="{{ block.img.img.desk }} 2x"
+            alt=""
+            class="img-desk"
+          />
+          <img
+            src="{{ block.img.img.mob }}"
+            alt=""
+            class="img-mob"
+          />
+        </div>
+        {% endif %}
+
+        {% if block.img.bg %}
+        <div class="text-image__image-bg">
+          <img src="{{ block.img.bg }}" alt="" />
+        </div>
+        {% endif %}
+
+        {% if block.img.card %}
+        <div class="card text-image__card">
+          <div class="card__header">
+            <div class="card__icon">{{ mixins.icon('card-icon') }}</div>
+            <div class="card__text">Notice</div>
+          </div>
+          <div class="card__body">
+            <p>{{  block.img.card.text }}</p>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end text-image -->

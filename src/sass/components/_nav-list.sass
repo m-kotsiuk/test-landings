@@ -1,0 +1,62 @@
+.nav-list
+	overflow: auto
+	white-space: nowrap
+	margin-left: -10px
+	padding-left: 10px
+
+	&__inner
+		display: flex
+		align-items: baseline
+
+		+md
+			display: block
+
+	&__item
+		margin-right: 15px
+
+		+md
+			margin-right: 0
+
+		&:not(:last-child)
+			+md
+				margin-bottom: 20px
+
+
+
+	&__link
+		font-size: 14px
+		transition: font-size 0.25s, color 0.25s
+
+		+xs
+			font-size: 16px
+
+		+md
+			position: relative
+			padding-left: 47px
+			font-size: 22px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 0
+				width: 20px
+				height: 1px
+				background-color: $grey
+				transform-origin: left center
+				transition: transform 0.25s, background-color 0.25s
+
+		&.is-active
+			font-size: 18px
+			color: $primary
+			font-weight: 700
+
+			+xs
+				font-size: 22px
+
+			+md
+
+				&::before
+					height: 2px
+					background-color: $primary
+					transform: scaleX(2)

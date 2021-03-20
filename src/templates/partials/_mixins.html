@@ -46,15 +46,26 @@
 {% endmacro %}
 
 
-{% macro dropdown(onj) %}
-<div class="dropdown">
-  <button type="button" class="dropdown__button">{{ obj.placeholder }}</button>
-  <ul class="dropdown__list">
-    {% for link in obj.link %}
+{% macro dropdown(obj) %}
+<div class="dropdown js-dropdown">
+  <button type="button" class="dropdown__button js-dropdown-btn">{{ obj.placeholder }}{{ icon('chevron-up') }}</button>
+  <ul class="dropdown__list  js-dropdown-links">
+    {% for link in obj.links %}
     <li class="dropdown__item">
-      <a href="#" class="dropdown__link">{{ link }}</a>
+      <a href="#" class="dropdown__link js-dropdown-link">{{ link }}</a>
     </li>
     {% endfor %}
   </ul>
 </div>
+{% endmacro %}
+
+{% macro lazyImage(obj) %}
+<img
+  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+  data-src="{{ obj.src }}"
+  data-srcset="{{ obj.srcset }}"
+  alt="{{ obj.alt }}"
+  class="lazyload {{ obj.class }}"
+/>
+
 {% endmacro %}

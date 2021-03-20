@@ -1,14 +1,14 @@
 <!-- begin text-image -->
-<section class="text-image">
+<section class="text-image {{ block.mods }}">
   <div class="container">
     <div class="text-image__inner">
 
       <div class="text-image__text">
-        {% if block.title %}
+        {% if block.text.title %}
           {% if block.primary %}
-          <h1 class="h1">{{ block.text.title | safe }}</h1>
+          <h1 class="h1 text-image__title">{{ block.text.title | safe }}</h1>
           {% else %}
-          <h2 class="h2">{{ block.text.title | safe }}</h2>
+          <h2 class="h2 text-image__title">{{ block.text.title | safe }}</h2>
           {% endif %}
         {% endif %}
 
@@ -20,31 +20,45 @@
 
         {% if block.text.btn  %}
         <div class="text-image__btn">
-          <button type="button" class="button"></button>
+          <button type="button" class="button">{{ block.text.btn }}</button>
         </div>
         {% endif %}
+
+         {% if block.img.slides %}
+          <div class="nav-list text-image__nav-list js-tab-slider-nav" data-slider="text-image">
+            <ul class="nav-list__inner">
+            {% for i in range(0, block.img.slides.length) %}
+            <li class="nav-list__item">
+              <button type="button" class="nav-list__link{% if not i %} is-active{% endif %}  js-tab-slider-link">{{ block.img.slides[i].title }}</button>
+            </li>
+            {% endfor %}
+            </ul>
+          </div>
+
+         {% endif %}
+
       </div>
 
       <div class="text-image__image">
-        {% if block.img.img %}
-        <div class="text-image__image-inner">
-          <img
-            src="{{ block.img.img.mob }}"
-            srcset="{{ block.img.img.desk }} 2x"
-            alt=""
-            class="img-desk"
-          />
-          <img
-            src="{{ block.img.img.mob }}"
-            alt=""
-            class="img-mob"
-          />
+        {% if block.img.bg %}
+        <div class="text-image__image-bg">
+          {{ mixins.lazyImage({
+            src: block.img.bg
+          }) }}
         </div>
         {% endif %}
 
-        {% if block.img.bg %}
-        <div class="text-image__image-bg">
-          <img src="{{ block.img.bg }}" alt="" />
+        {% if block.img.img %}
+        <div class="text-image__image-inner">
+          {{ mixins.lazyImage({
+            src: block.img.img.mob,
+            srcset: block.img.img.desk + ' 2x',
+            class: 'img-desk'
+          }) }}
+          {{ mixins.lazyImage({
+            src: block.img.img.mob,
+            class: 'img-mob'
+          }) }}
         </div>
         {% endif %}
 
@@ -52,15 +66,47 @@
         <div class="card text-image__card">
           <div class="card__header">
             <div class="card__icon">{{ mixins.icon('card-icon') }}</div>
-            <div class="card__text">Notice</div>
+            <div class="card__title">Notice</div>
           </div>
           <div class="card__body">
             <p>{{  block.img.card.text }}</p>
           </div>
         </div>
         {% endif %}
-      </div>
 
+
+        {% if block.img.slides %}
+          <div class="swiper-container text-image__slider js-tab-slider" data-slider="text-image">
+            <div class="swiper-wrapper text-image__slides">
+              {% for slide in  block.img.slides %}
+              <div class="swiper-slide text-image__slide">
+                <div class="text-image__slide-img">
+                  {{ mixins.lazyImage({
+                    src: slide.img.mob,
+                    srcset: slide.img.desk + ' 2x',
+                    class: 'img-desk'
+                  }) }}
+                  {{ mixins.lazyImage({
+                    src: slide.img.mob,
+                    class: 'img-mob'
+                  }) }}
+
+                  <div class="text-image__slide-bg">
+                     {{ mixins.lazyImage({
+                        src: slide.bg
+                      }) }}
+                  </div>
+                </div>
+                <div class="text-image__slide-desc">
+                  {{ slide.text | safe }}
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>

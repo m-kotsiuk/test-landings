@@ -1,0 +1,113 @@
+.menu
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: $white
+	padding: $headerHeightMd 10px  $headerHeightMd
+	pointer-events: none
+	opacity: 0
+	overflow: auto
+
+	&.with-transition
+		transition: opacity 0.5s
+
+	+xs
+		padding: $headerHeightMd 40px  $headerHeightMd
+
+	+md
+		opacity: 1
+		padding: 0
+		position: static
+		display: flex
+		align-items: center
+		pointer-events: auto
+
+	&.is-open
+		opacity: 1
+		pointer-events: auto
+
+	&__inner
+		display: table
+		width: 100%
+		height: 100%
+		max-width: 480px
+		margin-left: auto
+		margin-right: auto
+
+		+md
+			display: block
+			max-width: none
+
+	&__content
+		display: table-cell
+		vertical-align: middle
+
+		+md
+			display: flex
+			align-items: center
+
+	&__list
+		margin-bottom: 30px
+		+md
+			display: flex
+			align-items: center
+			margin-bottom: 0
+			margin-right: 10px
+
+	&__item
+		margin-bottom: 20px
+		+md
+			margin-bottom: 0
+			margin-right: 20px
+
+	&__link
+		font-size: 24px
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: color 0.25s
+
+		+md
+			font-size: 15px
+
+
+		&_icon
+			font-weight: 600
+
+		svg
+			fill: $grey
+			margin-right: 7px
+			transition: fill 0.25s
+
+			&.icon-mobile-vibration
+				width: 20px
+				height: 20px
+
+			&.icon-search-alt
+				width: 24px
+				height: 24px
+
+		+hov
+			color: $primary
+
+			svg
+				fill: $primary
+
+
+	&__btns
+		font-size: 0
+
+		.button
+			width: 100%
+
+			+md
+				width: auto
+
+			&:not(:last-child)
+				margin-bottom: 20px
+
+				+md
+					margin-bottom: 0
+					margin-right: 30px

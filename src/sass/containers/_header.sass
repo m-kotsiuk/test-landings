@@ -1,0 +1,38 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	height: $headerHeight
+	background-color: $white
+	box-shadow: $shadowSecondary
+	z-index: 10
+
+	+md
+		height: $headerHeightMd
+
+	&__container
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+
+	&__logo
+		display: block
+
+		img
+			max-width: 116px
+
+	&__left
+		position: relative
+		z-index: 1
+
+	&__right
+		display: flex
+
+
+	&__burger
+		position: relative
+		+md
+			display: none

@@ -1,0 +1,39 @@
+.dropdown
+	$this: &
+	display: inline-block
+	border-radius: 28px
+	border: 2px solid $lightGrey
+
+	&.is-open
+		#{$this}__list
+			max-width: 300px
+			max-height: 300px
+			transition: max-height 0.4s, max-width 0.4s 0s
+
+
+	&__list
+		overflow: hidden
+		max-height: 0
+		max-width: 0
+		transition: max-height 0.4s, max-width 0s 0.4s
+
+	&__button
+		padding: 8px 26px
+		color: $lightGrey
+		width: 100%
+		text-align: left
+
+		.icon
+			fill: transparent
+			stroke: $lightGrey
+			stroke-width: 2px
+			width: 12px
+			height: 8px
+			margin-left: 10px
+			transform: scale(1, -1)
+
+	&__link
+		color: $lightGrey
+		padding: 4px 26px
+		white-space: nowrap
+		display: block

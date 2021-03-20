@@ -1,9 +1,31 @@
 .button
+	display: inline-block
 	background-color: $primary
+	text-align: center
+	color: $white
+	font-weight: 700
+	font-size: 20px
+	line-height: 1.5
+	padding: 11px 32px
+	border-radius: 10px
+	border: 2px solid $primary
+	transition: color 0.25s, background-color 0.25s, border-color 0.25s, box-shadow 0.25s
 
-	&_wide
+	+hov
+		box-shadow: $shadowPrimary
 
 	&_sm
+		font-size: 15px
+		padding: 4px 18px 6px
+		min-width: 103px
+		border-radius: 10px
 
 	&_secondary
-		background-color: $bg
+		background-color: $white
+		color: $grey
+		border-color: $grey
+
+		+hov
+			box-shadow: none
+			color: $primary
+			border-color: $primary

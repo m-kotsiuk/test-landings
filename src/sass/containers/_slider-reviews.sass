@@ -1,0 +1,52 @@
+.slider-reviews
+	overflow: hidden
+
+	+md
+		margin-left: -10px
+		margin-right: -10px
+		padding-left: 10px
+		padding-right: 10px
+
+	.swiper-pagination-bullet
+		opacity: 1
+		width: 15px
+		height: 15px
+		border-radius: 50%
+		background: $blueLight
+		margin: 0 8px !important
+
+	.swiper-pagination-bullet-active
+		background: $blue
+
+	&__inner
+		overflow: visible
+
+	&__wrapper
+		padding-bottom: 92px
+
+		+xs
+			padding-bottom: 103px
+
+	&__nav
+		position: absolute
+		bottom: 0 !important
+		left: 50% !important
+		width: auto !important
+		transform: translateX(-50%)
+
+	&__slide
+		height: auto
+		cursor: default
+
+		.testimonial
+			height: 100%
+
+	&__btn
+		text-align: center
+		position: relative
+		top: -72px
+		z-index: 1
+
+		+xs
+			top: -79px
+

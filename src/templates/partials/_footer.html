@@ -30,31 +30,12 @@
         </div>
 
         <div class="footer__rating">
-          <div class="rating">
-             <ul class="rating__stars">
-              {% for i in range(0, 5) %}
-              <li class="rating__item">
-                <div class="rating__star">
-                  <div class="rating__star-bg">
-                     {{ mixins.icon('star') }}
-                  </div>
-                  <div
-                    class="rating__star-score"
-                    {% if i === 4 %}
-                    style="width: 8px"
-                    {% endif %}
-                  >
-                    {{ mixins.icon('star') }}
-                  </div>
-                </div>
-
-
-              </li>
-              {% endfor %}
-            </ul>
-            <div class="rating__total">4,5<span>/</span>5</div>
-          </div>
-
+          {{ mixins.rating({
+            mods: '',
+            score: 4.5,
+            scoreText: '4,5',
+            withTotals: true
+          }) }}
         </div>
 
         <div class="footer__info">

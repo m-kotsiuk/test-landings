@@ -69,3 +69,31 @@
 />
 
 {% endmacro %}
+
+
+{% macro rating(obj) %}
+<div class="rating {{ obj.mods }}">
+    <ul class="rating__stars">
+    {% for i in range(0, 5) %}
+    <li class="rating__item">
+      <div class="rating__star">
+        <div class="rating__star-bg">
+            {{ icon('star') }}
+        </div>
+        {% if (i + 1 <= obj.score) or ((obj.score - i - 1 < 0) and (obj.score - i - 1 > -1)) %}
+        <div
+          class="rating__star-score"
+          {% if ((obj.score - i - 1 < 0) and (obj.score - i - 1 > -1)) %}
+          style="width: {{ -1 * (obj.score - i - 1) * 100  }}%"
+          {% endif %}
+        >
+          {{ icon('star') }}
+        </div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="rating__total">{{ obj.scoreText }}{% if obj.withTotals %}<span>/</span>5{% endif %}</div>
+</div>
+{% endmacro %}

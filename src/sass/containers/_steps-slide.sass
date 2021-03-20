@@ -1,0 +1,43 @@
+.steps-slide
+	&__title
+		margin-bottom: 11px
+
+	&__subtitle
+		margin-bottom: 15px
+
+	&__tablinks
+		margin-bottom: 14px
+
+	&__tabs
+		+md
+			display: flex
+			justify-content: space-between
+
+	&__tabcontents
+		+md
+			width: 40%
+			flex-shrink: 0
+
+
+	&__tabcontent
+		p, ul, ol
+			margin-bottom: 20px
+
+		strong
+			font-weight: 700
+			color: $primary
+
+		ol
+			counter-reset: nums
+
+			li
+				line-height: 1.4
+
+				&:not(:last-child)
+					margin-bottom: 22px
+
+				&::before
+					content: counter(nums) '. '
+					counter-increment: nums
+					color: $primary
+					font-weight: 700

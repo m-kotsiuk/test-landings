@@ -1,0 +1,99 @@
+.slider-steps
+	$this: &
+
+	&__progress
+		display: flex
+		justify-content: space-between
+		margin-bottom: 57px
+
+		+xs
+			max-width: 586px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 72px
+
+		+md
+			max-width: 740px
+			margin-bottom: 100px
+
+	&__point
+		position: relative
+		display: flex
+		align-items: center
+		user-select: none
+		-webkit-tap-highlight-color: transparent
+
+
+		&:not(:last-child)
+			width: calc((100% - 30px) / 3)
+
+			&::after
+				content: ''
+				margin-left: 2px
+				margin-right: 2px
+				background-color: $primary
+				height: 2px
+				border-radius: 2px
+				width: 100%
+				display: block
+
+				+xs
+					margin-left: 5px
+					margin-right: 5px
+
+		&:last-child
+			width: 40px
+
+		&.is-active
+			&::after
+				background-color:  $blueLight
+			~ #{$this}__point
+
+				&::after
+					background-color:  $blueLight
+
+				#{$this}__num
+					color: $greenLight
+					background-color: $blueLight
+
+				#{$this}__text
+					+xs
+						color: $greenLight
+
+			#{$this}__text
+				color: $primary
+
+
+	&__num
+		display: block
+		border-radius: 50%
+		background-color: $primaryLight
+		width: 40px
+		height: 40px
+		display: flex
+		justify-content: center
+		font-weight: 700
+		color: $primary
+		+fontTitle
+		padding-top: 10px
+		font-size: 24px
+		line-height: 24px
+		flex-shrink: 0
+
+
+
+	&__text
+		position: absolute
+		font-size: 16px
+		white-space: nowrap
+		bottom: -9px
+		left: -3px
+		color: transparent
+
+		+xs
+			color: $primary
+			bottom: -33px
+
+	&__slider
+		+md
+			max-width: 940px

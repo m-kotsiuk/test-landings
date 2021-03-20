@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-card-icon" viewBox="0 0 24 24">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-calendar" viewBox="0 0 14 14">
+    <path d="M11.083 2.333H9.917V1.75a.583.583 0 00-1.167 0v.583h-3.5V1.75a.583.583 0 00-1.167 0v.583H2.917a1.75 1.75 0 00-1.75 1.75v7a1.75 1.75 0 001.75 1.75h8.166a1.75 1.75 0 001.75-1.75v-7a1.75 1.75 0 00-1.75-1.75zm.584 8.75a.583.583 0 01-.584.584H2.917a.583.583 0 01-.584-.584V7h9.334v4.083zm0-5.25H2.333v-1.75a.583.583 0 01.584-.583h1.166v.583a.583.583 0 001.167 0V3.5h3.5v.583a.583.583 0 001.167 0V3.5h1.166a.583.583 0 01.584.583v1.75z"/>
+</symbol><symbol id="icon-card-icon" viewBox="0 0 24 24">
     <path d="M24 3.14A3.14 3.14 0 0020.86 0H3.14A3.14 3.14 0 000 3.14v17.72A3.14 3.14 0 003.14 24h17.72A3.14 3.14 0 0024 20.86V3.14zM5.387 19.598a.7.7 0 01-.856-.857l.862-3.214 3.208 3.208-3.214.863zm13.855-11.69l-9.495 9.496-3.193-3.194 9.495-9.495c.45-.45 1.18-.45 1.63 0l1.563 1.563c.45.45.45 1.18 0 1.63z"/>
 </symbol><symbol id="icon-chevron-up" viewBox="0 0 20 12">
     <path d="M2 10l8-8 8 8"/>

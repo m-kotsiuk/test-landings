@@ -135,6 +135,101 @@
         </div>
       </section>
       <!-- end text-image -->
+      <!-- begin section-calculator-->
+      <section class="section-calculator">
+        <div class="container">
+          <div class="section-calculator__inner">
+            <div class="calculator">
+              <h2 class="h2 calculator__title">Calculator</h2>
+              <div class="calculator__desc">
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
+              </div>
+              <div class="calculator__form">
+                <form action="/" method="GET" novalidate class="js-order-form">
+                  <div class="calculator__form-inner">
+                    <div class="calculator__controls">
+                      <div class="calculator__row calculator__row_small">
+                        <div class="calculator__field">
+                          <div class="select js-select">
+                            <select name="color">
+                              <option value="" selected disabled>Colors</option>
+                              <option value="red">red</option>
+                              <option value="green">green</option>
+                              <option value="blue">blue</option>
+                              <option value="orange">orange</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="calculator__field">
+                          <div class="select js-select">
+                            <select name="size">
+                              <option value="" selected disabled>Size</option>
+                              <option value="100">100%</option>
+                              <option value="150">150%</option>
+                              <option value="200">200%</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="calculator__row calculator__row_small">
+                        <div class="calculator__field">
+                          <div class="field-counter js-field-counter">
+                            <button type="button" class="field-counter__btn field-counter__btn_dec js-field-counter-dec"></button>
+                            <input type="number" class="field-counter__input js-field-counter-input" name="amount" min="1" max="100" value="90" />
+                            <button type="button" class="field-counter__btn field-counter__btn_inc js-field-counter-inc"></button>
+                          </div>
+                        </div>
+                        <div class="calculator__field">
+                          <div class="field-calendar js-datepicker">
+                            <div class="field-calendar__icon">
+                              <svg class="icon icon-calendar">
+                                <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                              </svg>
+                            </div>
+                            <div class="field-calendar__input">
+                              <input name="date" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="calculator__row">
+                        <div class="calculator__field">
+                          <div class="select js-select">
+                            <select name="city">
+                              <option value="" selected disabled>City</option>
+                              <option value="Kyiv">Kyiv</option>
+                              <option value="Odessa">Odessa</option>
+                              <option value="Rivne">Rivne</option>
+                              <option value="Lviv">Lviv</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="calculator__field">
+                          <div class="select js-select">
+                            <select name="delivery">
+                              <option value="" selected disabled>Delivery</option>
+                              <option value="New Post">New Post</option>
+                              <option value="Ukrposhta">Ukrposhta</option>
+                              <option value="Pickup">Pickup</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calculator__submit">
+                      <div class="calculator__total"><span>$</span><span>56.25</span></div>
+                      <div class="calculator__btn">
+                        <button type="submit" class="button">Proceed</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section-calculator -->
       <!-- begin section-steps -->
       <section class="section-steps">
         <div class="container">

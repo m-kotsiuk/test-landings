@@ -1,0 +1,120 @@
+.calculator
+	background-color: $white
+	box-shadow: 0px 2px 16px rgba(32, 108, 164, 0.16)
+	padding-left: 10px
+	padding-right: 10px
+	padding-top: 20px
+	padding-bottom: 42px
+
+	+xs
+		padding-left: 75px
+		padding-right: 75px
+
+	+md
+		padding-left: 100px
+		padding-right: 100px
+		border-radius: 8px
+		padding-top: 60px
+		margin-bottom: 130px
+
+
+	&__title
+		text-align: center
+		margin-bottom: 10px
+
+	&__desc
+		text-align: center
+		margin-bottom: 40px
+
+	&__form-inner
+		+md
+			display: flex
+
+
+	&__controls
+		display: flex
+		flex-wrap: wrap
+
+		+xs
+			margin-bottom: 10px
+
+		+md
+			margin-bottom: 0
+
+	&__row
+		width: 100%
+
+		+xs
+			display: flex
+		&_small
+			+md
+				width: calc(50% - 10px)
+
+			&:nth-child(1)
+				+md
+					margin-right: 10px
+
+			&:nth-child(2)
+				+md
+					margin-left: 10px
+
+	&__field
+		margin-bottom: 18px
+
+		+xs
+			width: 50%
+
+		&:first-child
+			+xs
+				margin-right: 20px
+
+	&__total
+		text-align: center
+		font-weight: 700
+		font-size: 22px
+		line-height: 1
+		color: $primary
+		margin-bottom: 30px
+
+		+xs
+			width: 50%
+			margin-bottom: 0
+
+		+md
+			width: 100%
+
+		span
+			&:first-child
+				position: relative
+				top: -1px
+				font-size: 18px
+				margin-right: 5px
+
+	&__btn
+
+		+xs
+			width: 50%
+			padding-left: 10px
+
+		+md
+			width: 100%
+			margin-bottom: 18px
+		.button
+			width: 100%
+
+			+md
+				padding: 9px 32px
+
+	&__submit
+		+xs
+			display: flex
+			align-items: center
+			max-width: 410px
+			margin-left: auto
+			margin-right: auto
+
+		+md
+			width: 200px
+			padding-left: 20px
+			flex-direction: column
+			justify-content: space-between

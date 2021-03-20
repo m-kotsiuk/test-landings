@@ -36,11 +36,14 @@
 {% endmacro %}
 
 {% macro calendar(obj) %}
-<div class="field-calendar">
-  <input
-    name="{{ obj.name }}"
-    type="text"
-  />
+<div class="field-calendar js-datepicker">
+  <div class="field-calendar__icon">{{ icon('calendar') }}</div>
+  <div class="field-calendar__input">
+    <input
+      name="{{ obj.name }}"
+      type="text"
+    />
+  </div>
 </div>
 
 {% endmacro %}

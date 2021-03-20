@@ -5,7 +5,7 @@
       fields: [
         {
           type: 'select',
-          name: 'colors',
+          name: 'color',
           placeholder: 'Colors',
           options: [
             {
@@ -17,15 +17,19 @@
               text: 'green'
             },
             {
-              value: 'green',
-              text: 'green'
+              value: 'blue',
+              text: 'blue'
+            },
+            {
+              value: 'orange',
+              text: 'orange'
             }
           ]
         },
         {
           type: 'select',
-          name: 'options',
-          placeholder: 'Options',
+          name: 'size',
+          placeholder: 'Size',
           options: [
             {
               value: '100',
@@ -110,37 +114,36 @@
 
 <!-- begin section-calculator-->
 <section class="section-calculator">
-  <div class="conatiner">
+  <div class="container">
     <div class="section-calculator__inner">
       <div class="calculator">
-        <div class="calculator__inner">
-          <h2 class="h2 calculator__title">Calculator</h2>
-          <div class="calculator__desc">
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
-          </div>
-          <div class="calculator__form">
-            <form>
-              <div class="calculator__form-inner">
-
-                <div class="calcutator__controls">
-                  {% for row in rows %}
-                  <div class="calculator__row{% if row.small %} calculator__row_small{% endif %}">
-                    {% for field in row.fields %}
+        <h2 class="h2 calculator__title">Calculator</h2>
+        <div class="calculator__desc">
+          <p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
+        </div>
+        <div class="calculator__form">
+          <form action="/" method="GET" novalidate class="js-order-form">
+            <div class="calculator__form-inner">
+              <div class="calculator__controls">
+                {% for row in rows %}
+                <div class="calculator__row{% if row.small %} calculator__row_small{% endif %}">
+                  {% for field in row.fields %}
+                    <div class="calculator__field">
                       {{ mixins[field.type](field) }}
-                    {% endfor %}
-                  </div>
+                    </div>
                   {% endfor %}
                 </div>
+                {% endfor %}
+              </div>
 
-                <div class="calculator__submit">
-                  <div class="calculator__total"><span>$</span><span>56.25</span</div>
-                  <div class="calculator__btn">
-                    <button type="submit" class="button">Proceed</button>
-                  </div>
+              <div class="calculator__submit">
+                <div class="calculator__total"><span>$</span><span>56.25</span></div>
+                <div class="calculator__btn">
+                  <button type="submit" class="button">Proceed</button>
                 </div>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

@@ -1,0 +1,54 @@
+.field-counter
+	position: relative
+	padding: 13px 35px 13px 25px
+	box-shadow: 0px 1px 3px rgba(5, 41, 83, 0.14)
+	background-color: $bg
+	border-radius: 10px
+
+	+xs
+		padding: 12px 35px 12px 25px
+
+	input
+		display: block
+		width: 30px
+		margin-left: auto
+		margin-right: auto
+		color: $darkBlue
+		text-align: center
+
+		+xs
+			font-size: 18px
+
+	&__btn
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 14px
+		height: 14px
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 6px
+			left: 2px
+			width: 9px
+			height: 2px
+			border-radius: 2px
+			background-color: $darkBlue
+
+
+
+
+		&_dec
+			left: 26px
+
+			&::after
+				display: none
+
+
+		&_inc
+			right: 26px
+
+			&::after
+				transform: rotate(90deg)

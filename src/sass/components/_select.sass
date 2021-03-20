@@ -1,0 +1,102 @@
+.select
+	$this: &
+	position: relative
+
+	select
+		display: none
+
+	&__options-wrapper
+		position: absolute
+		top: 100%
+		width: 100%
+		overflow: hidden
+		pointer-events: none
+
+	&__options-holder
+		margin-right: -10px
+		padding-right: 15px
+		margin-left: -10px
+		padding-left: 10px
+		padding-top: 23px
+		padding-bottom: 10px
+		transform: translateY(-20px)
+		opacity: 0
+		pointer-events: none
+		transition: transform 0.4s, opacity 0.4s
+
+	&__options
+		max-height: 240px
+		padding: 24px
+		box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		background-color: $bg
+		overflow: auto
+
+
+
+	&__option
+		display: block
+		width: 100%
+		text-align: left
+		padding: 9px 8px 6px
+		border-radius: 6px
+		transition: color 0.25s, background-color 0.25s
+
+		+hov
+			color: $primary
+			background-color: $primaryLight
+
+	&__btn
+		width: 100%
+		display: block
+		padding: 13px 35px 13px 25px
+		box-shadow: 0px 1px 3px rgba(5, 41, 83, 0.14)
+		border-radius: 10px
+		background-color: $bg
+		color: $darkBlue
+		font-size: 15px
+		text-align: left
+		position: relative
+		transition: box-shadow 0.25s
+		border: 1px solid transparent
+
+		+xs
+			font-size: 18px
+			padding: 12px 35px 12px 25px
+
+		+hov
+			box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05)
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 24px
+			right: 20px
+			width: 8px
+			height: 2px
+			background-color: $black
+
+		&::before
+			right: 24px
+			transform: rotate(45deg)
+
+		&::after
+			transform: rotate(-45deg)
+
+	&.is-open
+		z-index: 1
+
+		#{$this}__btn
+			border-color: $primary
+
+			&::before
+				transform: rotate(-45deg)
+
+			&::after
+				transform: rotate(45deg)
+
+		#{$this}__options-holder
+			pointer-events: auto
+			opacity: 1
+			transform: translateY(0)

@@ -1,0 +1,88 @@
+.accordion
+	$this: &
+
+
+
+	&__item
+		background-color: $white
+		border-radius: 8px
+		box-shadow: $shadowSecondary
+
+		&.is-active
+			#{$this}__icon
+				.icon
+					transform: scale(1, 1)
+
+
+		&:not(:last-child)
+			margin-bottom: 20px
+
+	&__btn
+		position: relative
+		padding-top: 18px
+		padding-left: 20px
+		padding-bottom: 18px
+		width: 100%
+		text-align: left
+
+	&__title
+		display: block
+		padding-right: 60px
+		+fontTitle
+		font-size: 18px
+		line-height: 1.1
+		color: $darkBlue
+		font-weight: 700
+
+		+xs
+			font-size: 22px
+
+
+	&__icon
+		position: absolute
+		width: 16px
+		height: 10px
+		right: 18px
+		top: 50%
+		transform: translateY(-50%)
+
+		+xs
+			width: 24px
+			height: 14px
+			right: 20px
+
+		.icon
+			display: block
+			width: 16px
+			height: 10px
+			fill: transparent
+			stroke: $arrow
+			stroke-width: 2px
+			transform: scale(1, -1)
+
+			+xs
+				width: 24px
+				height: 14px
+
+
+	&__desc
+		position: relative
+		top: -10px
+		max-height: 0
+		overflow: hidden
+		transition: max-height 0.5s
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 20px
+			right: 20px
+			background-color: $line
+			height: 1px
+
+	&__desc-inner
+		padding: 10px 20px
+
+
+

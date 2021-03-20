@@ -291,7 +291,7 @@
       <section class="section-faq">
         <div class="container">
           <h2 class="h2 section-faq__title">FAQ</h2>
-          <ul class="accordion js-acc">
+          <ul class="accordion section-faq__accordion js-acc">
             <li class="accordion__item js-acc-item">
               <button type="button" class="accordion__btn js-acc-btn">
                 <span class="accordion__title">At vero eos et accusamus et iustosds odio?</span>
@@ -301,8 +301,10 @@
                   </svg>
                 </span>
               </button>
-              <div class="accordion__desc js-acc-desc">
-                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+              <div class="accordion__desc js-acc-content">
+                <div class="accordion__desc-inner">
+                  <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                </div>
               </div>
             </li>
             <li class="accordion__item js-acc-item">
@@ -314,25 +316,32 @@
                   </svg>
                 </span>
               </button>
-              <div class="accordion__desc js-acc-desc">
-                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio.</p>
-                <p>1. Deckblatt 2. Inhaltsverzeichnis 3. Einleitung 4. Darstellung des Facharbeitsthemas (= Hauptteil) 5. Fazit 6. Anhang 7. Eigenständigkeitserklärung.</p>
+              <div class="accordion__desc js-acc-content">
+                <div class="accordion__desc-inner">
+                  <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio.</p>
+                  <p>1. Deckblatt 2. Inhaltsverzeichnis 3. Einleitung 4. Darstellung des Facharbeitsthemas (= Hauptteil) 5. Fazit 6. Anhang 7. Eigenständigkeitserklärung.</p>
+                </div>
               </div>
             </li>
             <li class="accordion__item js-acc-item">
               <button type="button" class="accordion__btn js-acc-btn">
-                <span class="accordion__title">Wie lange braucht man, um eine Facharbeit zu schreiben??</span>
+                <span class="accordion__title">Wie lange braucht man, um eine Facharbeit zu schreiben?</span>
                 <span type="button" class="accordion__icon">
                   <svg class="icon icon-chevron-up">
                     <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
                   </svg>
                 </span>
               </button>
-              <div class="accordion__desc js-acc-desc">
-                <p>Diese Frage kann nicht pauschal beantwortet werden, da sich sowohl Deine Motivation als auch Deine Erfahrung bzw. Dein Wissen bezüglich der Facharbeit auf den Arbeitsprozess auswirken. Derweil arbeiten unsere Autoren höchst effizient und liefern Deine wissenschaftliche Arbeit in möglichst kurzer Zeit.</p>
+              <div class="accordion__desc js-acc-content">
+                <div class="accordion__desc-inner">
+                  <p>Diese Frage kann nicht pauschal beantwortet werden, da sich sowohl Deine Motivation als auch Deine Erfahrung bzw. Dein Wissen bezüglich der Facharbeit auf den Arbeitsprozess auswirken. Derweil arbeiten unsere Autoren höchst effizient und liefern Deine wissenschaftliche Arbeit in möglichst kurzer Zeit.</p>
+                </div>
               </div>
             </li>
           </ul>
+          <div class="section-faq__btn">
+            <button type="button" class="button js-modal-btn" data-modal="modal-1">Try for free</button>
+          </div>
         </div>
       </section>
       <!-- end section-faq -->

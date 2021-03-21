@@ -18,7 +18,9 @@ function createConfig(env) {
     context: path.join(__dirname, config.src.js),
     entry: {
       // vendor: ['jquery'],
-      app: './app.js',
+      'landing-1': './landing-1.js',
+      'landing-2': './landing-2.js',
+      'landing-3': './landing-3.js',
     },
     output: {
       path: path.join(__dirname, config.dest.js),

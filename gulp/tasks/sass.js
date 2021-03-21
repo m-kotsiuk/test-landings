@@ -3,7 +3,7 @@ import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
-// import mqpacker from 'css-mqpacker';
+import mqpacker from 'css-mqpacker';
 import config from '../config';
 import csso from 'postcss-csso';
 
@@ -11,8 +11,8 @@ const isMax = mq => /max-width/.test(mq);
 const isMin = mq => /min-width/.test(mq);
 
 const sortMediaQueries = (a, b) => {
-    A = a.replace(/\D/g, '');
-    B = b.replace(/\D/g, '');
+    const A = a.replace(/\D/g, '');
+    const B = b.replace(/\D/g, '');
 
     if (isMax(a) && isMax(b)) {
         return B - A;
@@ -28,13 +28,13 @@ const sortMediaQueries = (a, b) => {
 
 const processors = [
   autoprefixer({
-    browsers: ['last 4 versions'],
+    overrideBrowserslist: ['last 2 versions', 'not ie > 0', 'not ie_mob > 0', 'not dead'],
     cascade: false
   }),
-  // require('lost'),
-  // mqpacker({
-  //   sort: sortMediaQueries
-  // }),
+  require('lost'),
+  mqpacker({
+    sort: sortMediaQueries
+  }),
   csso
 ];
 

@@ -1,0 +1,46 @@
+{%
+
+  set block = {
+    mods: 'text-image_with-slider',
+    text: {
+      title: 'Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit',
+      text: '
+        <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+      '
+    },
+    img: {
+      slides: [
+        {
+          title: 'Temporibus autem',
+          img: {
+            desk: 'img/landing-1/card-reader-2x.png',
+            mob: 'img/landing-1/card-reader.png'
+          },
+          bg: 'img/landing-1/bgs/bg-3.svg',
+          text: '<p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,</p>'
+        },
+        {
+          title: 'Nam libero',
+          img: {
+            desk: 'img/landing-1/folder-2x.png',
+            mob: 'img/landing-1/folder.png'
+          },
+          bg: 'img/landing-1/bgs/bg-3.svg',
+          text: '<p>At vero eos et accusamus et iusto odio dignissimos ducimus,</p>'
+        },
+        {
+          title: 'Et harum',
+          img: {
+            desk: 'img/landing-1/headphones-2x.png',
+            mob: 'img/landing-1/headphones.png'
+          },
+          bg: 'img/landing-1/bgs/bg-3.svg',
+          text: '<p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,</p>'
+        }
+      ]
+    }
+  }
+
+%}
+
+{% include "partials/landing-1/_text-image.html" %}

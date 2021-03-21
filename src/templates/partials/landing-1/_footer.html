@@ -1,0 +1,76 @@
+{%
+  set footerLinks = ['About', 'Blog', 'Product', 'How it works', 'FAQ', 'Clients', 'Contact', 'Reviews']
+%}
+{%
+  set socials = ['img/landing-1/footer/facebook.svg', 'img/landing-1/footer/instagram.svg', 'img/landing-1/footer/youtube.svg', 'img/landing-1/footer/pinterest.svg']
+%}
+
+<!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+
+      <div class="footer__col">
+        <ul class="footer__links">
+          {% for link in footerLinks  %}
+          <li class="footer__link-item">
+            <a href="#" class="footer__link">{{ link }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+      <div class="footer__col">
+        <div class="footer__link">
+          <a href="tel:+4962153399112">+49(621) <strong>53399112</strong></a>
+        </div>
+        <div class="footer__link">
+          Call us!
+        </div>
+
+        <div class="footer__rating">
+          {{ mixins.rating({
+            mods: '',
+            score: 4.5,
+            scoreText: '4,5',
+            withTotals: true
+          }) }}
+        </div>
+
+        <div class="footer__info">
+          {{ mixins.dropdown({
+            placeholder: 'Info',
+            links: ['Geld-Zurück-Garantie', 'Datenschutzerklärung', 'Revisionen', 'Rabattpolitik']
+          }) }}
+        </div>
+      </div>
+
+
+      <div class="footer__col">
+          <div class="footer__icon-row">
+            {% for social in socials %}
+            <a href="#" class="footer__icon">
+              <img src="{{ social }}" alt="" />
+            </a>
+            {% endfor %}
+          </div>
+          <div class="footer__icon-row">
+            <span class="footer__icon">
+              <img src="img/landing-1/footer/visa.svg" alt="" />
+            </span>
+            <span class="footer__icon">
+              <img src="img/landing-1/footer/mastercard.svg" alt="" />
+            </span>
+          </div>
+          <div class="footer__icon-row">
+            <span class="footer__icon">
+              <img src="img/landing-1/footer/security.svg" alt="" />
+            </span>
+          </div>
+      </div>
+    </div>
+    <div class="footer__copyright">&copy; Copyright 2016-2020</div>
+  </div>
+</footer>
+<!-- end footer -->

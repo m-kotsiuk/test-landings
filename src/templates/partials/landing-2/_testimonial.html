@@ -1,0 +1,27 @@
+<!-- begin testimonial -->
+<div class="testimonial">
+  <div class="testimonial__content">
+    <div class="testimonial__top">
+      <div class="testimonial__header">
+        <div class="testimonial__img">
+            {{ mixins.lazyImage({
+              src: 'img/landing-2/' + testimonial.photo + '.png',
+              srcset: 'img/landing-2/' + testimonial.photo + '-2x.png 2x'
+            }) }}
+        </div>
+        <div class="testimonial__name">{{ testimonial.name }}</div>
+      </div>
+
+      <a href="#" class="testimonial__icon">
+        {{ mixins.icon('twitter-alt') }}
+      </a>
+    </div>
+
+    <div class="testimonial__text">
+      {{ testimonial.text | safe }}
+    </div>
+  </div>
+
+  <div class="testimonial__date">Jan 18, 2018</div>
+</div>
+<!-- end testimonial -->

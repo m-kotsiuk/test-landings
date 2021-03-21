@@ -1,0 +1,141 @@
+{%
+  set testimonials = [
+    [
+      {
+        photo: 'client-5',
+        name: 'Joseph Matthews',
+        text: '
+          <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+        '
+      },
+      {
+        photo: 'client-1',
+        name: 'Patrick Martin',
+        text: '
+          <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+        '
+      },
+      {
+        photo: 'client-2',
+        name: 'Bruce Murphy',
+        text: '
+          <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+        '
+      },
+      {
+        photo: 'client-3',
+        name: 'Crystal Perkins',
+        text: '
+          <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+        '
+      },
+      {
+        photo: 'client-5',
+        name: 'Bruce Murphy',
+        text: '
+          <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+        '
+      }
+    ],
+    [
+       {
+        photo: 'client-4',
+        name: 'Thomas Cruz',
+        text: '
+          <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+        '
+      },
+      {
+        photo: 'client-3',
+        name: 'Andrew Cook',
+        text: '
+          <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+        '
+      },
+      {
+        photo: 'client-4',
+        name: 'Thomas Cruz',
+        text: '
+          <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+        '
+      },
+      {
+        photo: 'client-5',
+        name: 'Gregory Wallace',
+        text: '
+          <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+        '
+      },
+      {
+        photo: 'client-6',
+        name: 'Megan Walters',
+        text: '
+          <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+        '
+      },
+      {
+        photo: 'client-7',
+        name: 'Andrew Cook',
+        text: '
+          <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+        '
+      }
+    ]
+
+  ]
+%}
+
+<!-- begin community -->
+<section id="community" class="community">
+  <div class="container community__container">
+    <div class="community__inner">
+      <div class="community__left">
+         <h2 class="title-sm community__title">Community</h2>
+        <h3 class="h3 s community__subtitle">We believe in the power of community</h3>
+        <div class="community__desk">
+          <p>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.</p>
+        </div>
+        <div class="community__btn">
+          <a href="#" class="button button_primary">Read more testimonials</a>
+        </div>
+      </div>
+
+      <div class="community__right">
+        <div class="testimonials">
+          <div class="testimonials__desk-sliders">
+            {% for group in testimonials %}
+              <div class="swiper-container testimonials__desk-slider js-testimonials-desk-slider">
+                <div class="swiper-wrapper">
+
+                  {% for item in group %}
+                  <div class="swiper-slide testimonials__desk-slide">
+                    {% set testimonial = item %}
+                    {% include "partials/landing-2/_testimonial.html" %}
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+
+          <div class="swiper-container testimonials__mob-slider js-testimonials-mob-slider">
+            <div class="swiper-wrapper">
+              {% for group in testimonials %}
+              {% for item in group %}
+              <div class="swiper-slide testimonials__mob-slide">
+              {% set testimonial = item %}
+              {% include "partials/landing-2/_testimonial.html" %}
+
+              </div>
+              {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end community -->

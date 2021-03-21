@@ -1,0 +1,22 @@
+.footer
+	padding-bottom: 40px
+	&__socials
+		text-align: center
+		margin-bottom: 25px
+
+	&__social
+		&:not(:last-child)
+			margin-right: 27px
+
+		svg
+			fill:  #DADADA
+			transition: fill 0.25s
+
+		+hov
+			svg
+				fill: $primary
+
+	&__copyright
+		font-size: 11px
+		text-align: center
+

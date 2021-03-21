@@ -21,13 +21,13 @@
           <div class="header__inner">
             <a href="#" class="header__logo">Show<span>Trackr</span></a>
             <ul class="header__nav">
-              <li class="header__nav-item"><a href="#features" class="header__nav-link">Features</a></li>
-              <li class="header__nav-item"><a href="#community" class="header__nav-link">Community</a></li>
-              <li class="header__nav-item"><a href="#get-strarted" class="header__nav-link">Get Started</a></li>
+              <li class="header__nav-item"><a href="#features" class="header__nav-link js-nav-btn">Features</a></li>
+              <li class="header__nav-item"><a href="#community" class="header__nav-link js-nav-btn">Community</a></li>
+              <li class="header__nav-item"><a href="#get-started" class="header__nav-link js-nav-btn">Get Started</a></li>
             </ul>
             <div class="header__btns">
               <a href="#" class="button button_blank button_sm header__btn-login">Log in</a>
-              <a href="#get-started" class="button button_primary button_sm js-nav-link">Get started</a>
+              <a href="#get-started" class="button button_primary button_sm js-nav-btn">Get started</a>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
       </section>
       <!-- end hero -->
       <!-- begin features -->
-      <div class="section-features">
+      <div id="features" class="section-features">
         <div class="container">
           <div class="section-features__inner">
             <h2 class="title-sm section-features__title">Features</h2>
@@ -255,6 +255,644 @@
         </div>
       </section>
       <!-- end advants -->
+      <!-- begin community -->
+      <section id="community" class="community">
+        <div class="container community__container">
+          <div class="community__inner">
+            <div class="community__left">
+              <h2 class="title-sm community__title">Community</h2>
+              <h3 class="h3 s community__subtitle">We believe in the power of community</h3>
+              <div class="community__desk">
+                <p>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.</p>
+              </div>
+              <div class="community__btn">
+                <a href="#" class="button button_primary">Read more testimonials</a>
+              </div>
+            </div>
+            <div class="community__right">
+              <div class="testimonials">
+                <div class="testimonials__desk-sliders">
+                  <div class="swiper-container testimonials__desk-slider js-testimonials-desk-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-5.png" data-srcset="img/landing-2/client-5-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Joseph Matthews</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-1.png" data-srcset="img/landing-2/client-1-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Patrick Martin</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-2.png" data-srcset="img/landing-2/client-2-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Bruce Murphy</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-3.png" data-srcset="img/landing-2/client-3-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Crystal Perkins</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-5.png" data-srcset="img/landing-2/client-5-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Bruce Murphy</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-container testimonials__desk-slider js-testimonials-desk-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-4.png" data-srcset="img/landing-2/client-4-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Thomas Cruz</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-3.png" data-srcset="img/landing-2/client-3-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Andrew Cook</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-4.png" data-srcset="img/landing-2/client-4-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Thomas Cruz</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-5.png" data-srcset="img/landing-2/client-5-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Gregory Wallace</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-6.png" data-srcset="img/landing-2/client-6-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Megan Walters</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                      <div class="swiper-slide testimonials__desk-slide">
+                        <!-- begin testimonial -->
+                        <div class="testimonial">
+                          <div class="testimonial__content">
+                            <div class="testimonial__top">
+                              <div class="testimonial__header">
+                                <div class="testimonial__img">
+                                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-7.png" data-srcset="img/landing-2/client-7-2x.png 2x" alt="" class="lazyload " />
+                                </div>
+                                <div class="testimonial__name">Andrew Cook</div>
+                              </div>
+                              <a href="#" class="testimonial__icon">
+                                <svg class="icon icon-twitter-alt">
+                                  <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="testimonial__text">
+                              <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                            </div>
+                          </div>
+                          <div class="testimonial__date">Jan 18, 2018</div>
+                        </div>
+                        <!-- end testimonial -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-container testimonials__mob-slider js-testimonials-mob-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-5.png" data-srcset="img/landing-2/client-5-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Joseph Matthews</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-1.png" data-srcset="img/landing-2/client-1-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Patrick Martin</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-2.png" data-srcset="img/landing-2/client-2-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Bruce Murphy</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-3.png" data-srcset="img/landing-2/client-3-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Crystal Perkins</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-5.png" data-srcset="img/landing-2/client-5-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Bruce Murphy</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-4.png" data-srcset="img/landing-2/client-4-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Thomas Cruz</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-3.png" data-srcset="img/landing-2/client-3-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Andrew Cook</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-4.png" data-srcset="img/landing-2/client-4-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Thomas Cruz</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-5.png" data-srcset="img/landing-2/client-5-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Gregory Wallace</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-6.png" data-srcset="img/landing-2/client-6-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Megan Walters</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>ShowTrackr is a real gem! I started using it a couple months ago and it completely changed the way how I watch TV shows. I can only recommend it!</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                    <div class="swiper-slide testimonials__mob-slide">
+                      <!-- begin testimonial -->
+                      <div class="testimonial">
+                        <div class="testimonial__content">
+                          <div class="testimonial__top">
+                            <div class="testimonial__header">
+                              <div class="testimonial__img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/client-7.png" data-srcset="img/landing-2/client-7-2x.png 2x" alt="" class="lazyload " />
+                              </div>
+                              <div class="testimonial__name">Andrew Cook</div>
+                            </div>
+                            <a href="#" class="testimonial__icon">
+                              <svg class="icon icon-twitter-alt">
+                                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="testimonial__text">
+                            <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+                          </div>
+                        </div>
+                        <div class="testimonial__date">Jan 18, 2018</div>
+                      </div>
+                      <!-- end testimonial -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end community -->
+      <!-- begin get-started -->
+      <section id="get-started" class="get-started">
+        <div class="container">
+          <div class="get-started__inner">
+            <h2 class="title-sm get-started__title">Get Started</h2>
+            <h3 class="h2 get-started__subtitle">Start tracking your TV shows for free</h3>
+            <div class="get-started__desk">
+              <p>In order to start tracking your TV shows, all you have to do is enter your email address. Everything else will be taken care of by us. All you have to do is sit back, relax and enjoy your TV shows.</p>
+            </div>
+            <div class="get-started__form">
+              <!-- begin form-subscribe -->
+              <div class="form-subscribe">
+                <form action="">
+                  <div class="form-subscribe__inner">
+                    <div class="form-subscribe__input">
+                      <span>Email</span>
+                      <input type="email" placeholder="your@email.com" required />
+                    </div>
+                    <button type="submit" class="button button_primary button_big form-subscribe__btn">Start tracking</button>
+                  </div>
+                </form>
+              </div>
+              <!-- end form-subscribe -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end get-started -->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__socials">
+            <a href="#" class="footer__social">
+              <svg class="icon icon-twitter-alt">
+                <use xlink:href="img/sprite.svg#icon-twitter-alt"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__social">
+              <svg class="icon icon-facebook-alt">
+                <use xlink:href="img/sprite.svg#icon-facebook-alt"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__social">
+              <svg class="icon icon-youtube-alt">
+                <use xlink:href="img/sprite.svg#icon-youtube-alt"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright 2018 All rights reserved — Designed by Daniel Korpai</div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

@@ -9,7 +9,7 @@
       name: 'Community'
     },
     {
-      id: 'get-strarted',
+      id: 'get-started',
       name: 'Get Started'
     }
   ]
@@ -24,13 +24,13 @@
 
       <ul class="header__nav">
         {% for link in nav %}
-        <li class="header__nav-item"><a href="#{{ link.id }}" class="header__nav-link">{{ link.name }}</a></li>
+        <li class="header__nav-item"><a href="#{{ link.id }}" class="header__nav-link js-nav-btn">{{ link.name }}</a></li>
         {% endfor %}
       </ul>
 
       <div class="header__btns">
         <a href="#" class="button button_blank button_sm header__btn-login">Log in</a>
-        <a href="#get-started" class="button button_primary button_sm js-nav-link">Get started</a>
+        <a href="#get-started" class="button button_primary button_sm js-nav-btn">Get started</a>
       </div>
     </div>
   </div>

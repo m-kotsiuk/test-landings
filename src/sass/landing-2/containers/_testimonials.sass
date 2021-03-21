@@ -1,0 +1,38 @@
+.testimonials
+
+	+md
+		height: 100%
+
+	&__desk-sliders
+		display: none
+
+		+md
+			height: 100%
+			display: flex
+
+	&__desk-slider
+		// height: 1018px
+		&:first-child
+			// transform: translateY(-50px)
+			// height: 850px
+			margin-right: 10px
+
+		&:last-child
+			margin-left: 10px
+
+		.swiper-wrapper
+			height: 100% !important
+
+	&__mob-slider
+		width: 4 * 260px + 3 * 16px
+		+md
+			display: none
+
+	&__desk-slide
+		box-sizing: border-box
+
+	&__mob-slide
+		height: auto
+
+		.testimonial
+			height: 100%

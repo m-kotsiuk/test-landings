@@ -1,0 +1,18 @@
+{%
+  set socials = ['twitter', 'facebook', 'youtube']
+%}
+
+<!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__socials">
+      {% for social in socials %}
+      <a href="#" class="footer__social">{{ mixins.icon(social + '-alt') }}</a>
+      {% endfor %}
+    </div>
+
+    <div class="footer__copyright">Copyright 2018 All rights reserved — Designed by Daniel Korpai</div>
+  </div>
+</footer>
+
+<!-- end footer -->

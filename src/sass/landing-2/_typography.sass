@@ -1,0 +1,75 @@
+body
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400
+	font-size: 16px
+	line-height: 1.5
+	color: $black
+	background-color: $white
+
+	+sm
+		font-size: 18px
+
+.h1
+	font-weight: 900
+	font-size: 42px
+	line-height: 1.15
+
+	+xs
+		font-size: 56px
+
+	+md
+		font-size: 70px
+		line-height: 1
+
+
+.h2
+	font-weight: 900
+	font-size: 35px
+	line-height: 1.15
+
+	+xs
+		font-size: 45px
+
+	+md
+		font-size: 60px
+		line-height: 1
+
+
+.h4
+	font-size: 18px
+	line-height: 1.15
+	font-weight: 700
+
+.title-sm
+	font-weight: 300
+	font-size: 16px
+	line-height: 1.25
+
+	+xs
+		font-size: 18px
+
+
+.link-more
+	position: relative
+	font-size: 16px
+	font-weight: 600
+	color: $primary
+	padding-right: 15px
+
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 0
+		width: 6px
+		height: 2px
+		background-color: $primary
+		transform-origin: right center
+
+	&::before
+		transform: rotate(45deg)
+
+	&::after
+		transform: rotate(-45deg)

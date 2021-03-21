@@ -1,0 +1,38 @@
+{%
+  set nav = [
+    {
+      id: 'features',
+      name: 'Features'
+    },
+    {
+      id: 'community',
+      name: 'Community'
+    },
+    {
+      id: 'get-strarted',
+      name: 'Get Started'
+    }
+  ]
+
+%}
+
+<!-- begin header -->
+<header class="header">
+  <div class="container header__container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">Show<span>Trackr</span></a>
+
+      <ul class="header__nav">
+        {% for link in nav %}
+        <li class="header__nav-item"><a href="#{{ link.id }}" class="header__nav-link">{{ link.name }}</a></li>
+        {% endfor %}
+      </ul>
+
+      <div class="header__btns">
+        <a href="#" class="button button_blank button_sm header__btn-login">Log in</a>
+        <a href="#get-started" class="button button_primary button_sm js-nav-link">Get started</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->

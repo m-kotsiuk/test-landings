@@ -8,12 +8,142 @@
     <meta name="theme-color" content="#fff" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="all" href="css/landing-2.css" />
   </head>
   <body>
     <!-- BEGIN content -->
     <div class="out">
+      <!-- begin header -->
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__inner">
+            <a href="#" class="header__logo">Show<span>Trackr</span></a>
+            <ul class="header__nav">
+              <li class="header__nav-item"><a href="#features" class="header__nav-link">Features</a></li>
+              <li class="header__nav-item"><a href="#community" class="header__nav-link">Community</a></li>
+              <li class="header__nav-item"><a href="#get-strarted" class="header__nav-link">Get Started</a></li>
+            </ul>
+            <div class="header__btns">
+              <a href="#" class="button button_blank button_sm header__btn-login">Log in</a>
+              <a href="#get-started" class="button button_primary button_sm js-nav-link">Get started</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- begin hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__bg">
+              <div class="hero__bg-left">
+                <img src="img/landing-2/hero-bg-2.svg" alt="" />
+              </div>
+              <div class="hero__bg-right">
+                <img src="img/landing-2/hero-bg-1.svg" alt="" />
+              </div>
+            </div>
+            <div class="hero__left">
+              <div class="hero__left-top">
+                <h1 class="h1 hero__title">Track your shows automatically</h1>
+                <div class="hero__desc">
+                  <p>With ShowTrackr you can track your favorite TV shows automatically, so you never loose track of your TV shows ever again. 🍿</p>
+                </div>
+                <div class="hero__form">
+                  <!-- begin form-subscribe -->
+                  <div class="form-subscribe">
+                    <form action="">
+                      <div class="form-subscribe__inner">
+                        <div class="form-subscribe__input">
+                          <span>Email</span>
+                          <input type="email" placeholder="your@email.com" required />
+                        </div>
+                        <button type="submit" class="button button_primary button_big form-subscribe__btn">Start tracking</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- end form-subscribe -->
+                </div>
+              </div>
+              <div class="hero__icons">
+                <div class="hero__icons-text">Compatible with</div>
+                <div class="hero__icons">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/netflix.png" data-srcset="" alt="" class="lazyload hero__icon hero__icon_netflix" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/apple.png" data-srcset="" alt="" class="lazyload hero__icon hero__icon_apple" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/android.png" data-srcset="" alt="" class="lazyload hero__icon hero__icon_android" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/windows.png" data-srcset="" alt="" class="lazyload hero__icon hero__icon_windows" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/synology.png" data-srcset="" alt="" class="lazyload hero__icon hero__icon_synology" />
+                </div>
+              </div>
+            </div>
+            <div class="hero__right">
+              <div class="hero__img">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/hero.png" data-srcset="img/landing-2/hero.png 2x" alt="" class="lazyload " />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero -->
+      <!-- begin features -->
+      <div class="section-features">
+        <div class="container">
+          <div class="section-features__inner">
+            <h2 class="title-sm section-features__title">Features</h2>
+            <h3 class="h2 section-features__subtitle">Built and customized<br />for your habits</h3>
+            <div class="section-features__desk">
+              <p>ShowTrackr’s built-in machine learning and context-aware features guarantee that all the notifications and recommendations are always delivered to you in the perfect moment.</p>
+            </div>
+          </div>
+          <ul class="features section-features__features">
+            <li class="features__item">
+              <div class="features__item-inner">
+                <div class="features__icon">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/advant-1.svg" data-srcset="" alt="" class="lazyload " />
+                </div>
+                <h3 class="h4 features__title">Automated tracking</h3>
+                <div class="features__desc">
+                  <p>Track your favorite shows automatically without switching between apps.</p>
+                </div>
+                <div class="features__link">
+                  <a href="#" class="link-more">Learn more</a>
+                </div>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-inner">
+                <div class="features__icon">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/advant-2.svg" data-srcset="" alt="" class="lazyload " />
+                </div>
+                <h3 class="h4 features__title">Machine learning</h3>
+                <div class="features__desc">
+                  <p>Get recommendations like never before, which are truly customized for your taste.</p>
+                </div>
+                <div class="features__link">
+                  <a href="#" class="link-more">Learn more</a>
+                </div>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-inner">
+                <div class="features__icon">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-2/advant-3.svg" data-srcset="" alt="" class="lazyload " />
+                </div>
+                <h3 class="h4 features__title">Smart notifications</h3>
+                <div class="features__desc">
+                  <p>Receive smart notifications exactly at the right moments when you need them.</p>
+                </div>
+                <div class="features__link">
+                  <a href="#" class="link-more">Learn more</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end features -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

@@ -1,0 +1,64 @@
+{%
+  set icons = [
+    'netflix',
+    'apple',
+    'android',
+    'windows',
+    'synology'
+  ]
+%}
+
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__bg">
+        <div class="hero__bg-left">
+           <img src="img/landing-2/hero-bg-2.svg" alt="" />
+        </div>
+        <div class="hero__bg-right">
+          <img src="img/landing-2/hero-bg-1.svg" alt="" />
+        </div>
+      </div>
+      <div class="hero__left">
+        <div class="hero__left-top">
+            <h1 class="h1 hero__title">Track your shows automatically</h1>
+          <div class="hero__desc">
+            <p>With ShowTrackr you can track your favorite TV shows automatically, so you never loose track of your TV shows ever again. 🍿</p>
+          </div>
+
+          <div class="hero__form">
+            {% include "partials/landing-2/_form-subscribe.html" %}
+          </div>
+        </div>
+
+
+        <div class="hero__icons">
+          <div class="hero__icons-text">Compatible with</div>
+          <div class="hero__icons">
+            {% for icon in icons %}
+            {{ mixins.lazyImage({
+              class: 'hero__icon hero__icon_' + icon,
+              src: 'img/landing-2/' + icon + '.png'
+            }) }}
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero__right">
+        <div class="hero__img">
+          {{ mixins.lazyImage({
+            src: 'img/landing-2/hero.png',
+            srcset: 'img/landing-2/hero.png 2x'
+          }) }}
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- end hero -->

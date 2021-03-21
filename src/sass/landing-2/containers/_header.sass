@@ -1,0 +1,54 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	height: 50px
+	background-color: $white
+	z-index: 10
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1)
+
+	&__container
+		height: 100%
+
+	&__logo
+		font-weight: 700
+		font-size: 18px
+		line-height: 18px
+		white-space: nowrap
+		span
+			color: $primary
+
+	&__inner
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__nav
+		display: none
+
+		+sm
+			display: flex
+			align-items: center
+			margin-left: 90px
+			margin-top: -3px
+
+	&__nav-item
+		&:not(:last-child)
+			margin-right: 60px
+
+	&__nav-link
+		font-size: 14px
+		line-height: 18px
+
+	&__btns
+		display: flex
+		align-items: center
+
+	&__btn-login
+		display: none
+
+		+sm
+			display: block
+			margin-right: 10px

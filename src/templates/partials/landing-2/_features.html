@@ -1,0 +1,52 @@
+{%
+  set features = [
+    {
+      icon: 'img/landing-2/advant-1.svg',
+      title: 'Automated tracking',
+      desc: 'Track your favorite shows automatically without switching between apps.'
+    },
+    {
+      icon: 'img/landing-2/advant-2.svg',
+      title: 'Machine learning',
+      desc: 'Get recommendations like never before, which are truly customized for your taste.'
+    },
+    {
+      icon: 'img/landing-2/advant-3.svg',
+      title: 'Smart notifications',
+      desc: 'Receive smart notifications exactly at the right moments when you need them.'
+    }
+  ]
+%}
+<!-- begin features -->
+<div class="section-features">
+  <div class="container">
+    <div class="section-features__inner">
+      <h2 class="title-sm section-features__title">Features</h2>
+      <h3 class="h2 section-features__subtitle">Built and customized<br/>for your habits</h3>
+      <div class="section-features__desk">
+        <p>ShowTrackr’s built-in machine learning and context-aware features guarantee that all the notifications and recommendations are always delivered to you in the perfect moment.</p>
+      </div>
+    </div>
+    <ul class="features section-features__features">
+      {% for item in features %}
+      <li class="features__item">
+        <div class="features__item-inner">
+          <div class="features__icon">
+            {{ mixins.lazyImage({
+                src: item.icon
+              }) }}
+          </div>
+          <h3 class="h4 features__title">{{ item.title }}</h3>
+          <div class="features__desc">
+            <p>{{ item.desc }}</p>
+          </div>
+          <div class="features__link">
+            <a href="#" class="link-more">Learn more</a>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<!-- end features -->

@@ -1,9 +1,7 @@
-import { forEach } from '../utils';
-
 const initDropdown = el => {
   const btn = el.querySelector('.js-dropdown-btn');
   // const list = el.querySelector('.js-dropdown-links');
-  const links = el.querySelectorAll('.js-dropdown-link');
+  const links = [...el.querySelectorAll('.js-dropdown-link')];
 
   let dropdownIsOpen = false;
 
@@ -27,7 +25,7 @@ const initDropdown = el => {
     }
   });
 
-  forEach.call(links, link => {
+  links.forEach(link => {
     link.addEventListener('click', () => {
       closeDropdown();
     });
@@ -35,7 +33,7 @@ const initDropdown = el => {
 };
 
 const dropdowns = () => {
-  forEach.call(document.querySelectorAll('.js-dropdown'), el => {
+  [...document.querySelectorAll('.js-dropdown')].forEach(el => {
     initDropdown(el);
   });
 };

@@ -1,11 +1,9 @@
-import { forEach } from '../utils';
-
-const accElems = document.querySelectorAll('.js-acc');
+const accElems = [...document.querySelectorAll('.js-acc')];
 
 const initAccordion = el => {
-  const items = el.querySelectorAll('.js-acc-item');
+  const items = [...el.querySelectorAll('.js-acc-item')];
 
-  forEach.call(items, item => {
+  items.forEach(item => {
     const btn = item.querySelector('.js-acc-btn');
     const content = item.querySelector('.js-acc-content');
 
@@ -35,14 +33,14 @@ const initAccordion = el => {
 };
 
 const acccordions = () => {
-  forEach.call(accElems, el => {
+  accElems.forEach(el => {
     initAccordion(el);
   });
 
   window.addEventListener('resize', () => {
-    const openAccItems = document.querySelectorAll('.js-acc-item.is-active');
+    const openAccItems = [...document.querySelectorAll('.js-acc-item.is-active')];
 
-    forEach.call(openAccItems, el => {
+    openAccItems.forEach( el => {
       const content = el.querySelector('.js-acc-content');
       content.removeAttribute('style');
       content.style.maxHeight = `${content.scrollHeight}px`;

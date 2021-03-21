@@ -80,7 +80,7 @@
                 <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.</p>
               </div>
               <div class="text-image__btn">
-                <button type="button" class="button">Try for free</button>
+                <button type="button" class="button js-modal-link" data-modal="main">Try for free</button>
               </div>
             </div>
             <div class="text-image__image">
@@ -106,7 +106,7 @@
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
               </div>
               <div class="text-image__btn">
-                <button type="button" class="button">Try for free</button>
+                <button type="button" class="button js-modal-link" data-modal="main">Try for free</button>
               </div>
             </div>
             <div class="text-image__image">
@@ -1370,6 +1370,39 @@
         </div>
       </footer>
       <!-- end footer -->
+      <!-- begin modal -->
+      <div class="modal js-modal" data-modal="main">
+        <div class="modal__inner">
+          <div class="modal__content">
+            <div class="modal__body js-modal-body">
+              <div class="modal__img">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/modal.png" data-srcset="img/modal-2x.png 2x" alt="" class="lazyload " />
+              </div>
+              <div class="modal__text">
+                <h2 class="h2 modal__title">Sed ut perspiciatis</h2>
+                <div class="modal__desc">
+                  <p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.</p>
+                </div>
+                <div class="modal__form">
+                  <form action="/">
+                    <div class="modal__form-input">
+                      <input type="email" required placeholder="deine@email.com" />
+                    </div>
+                    <div class="modal__form-input">
+                      <input type="text" required placeholder="Name" />
+                    </div>
+                    <div class="modal__form-btn">
+                      <button type="submit" class="button">Ja, ich möchte!</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <button type="button" class="modal__close-btn js-modal-close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

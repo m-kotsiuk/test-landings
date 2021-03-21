@@ -1,9 +1,8 @@
 import { Swiper, EffectFade } from 'swiper';
-import { forEach } from '../utils';
 
 Swiper.use([EffectFade]);
 
-const sliders = document.querySelectorAll('.js-tab-slider');
+const sliders = [...document.querySelectorAll('.js-tab-slider')];
 
 
 const initSlider = el => {
@@ -12,7 +11,7 @@ const initSlider = el => {
 
   if (!nav) return;
 
-  const navLinks = nav.querySelectorAll('.js-tab-slider-link');
+  const navLinks = [...nav.querySelectorAll('.js-tab-slider-link')];
 
 
   const swiper = new Swiper(el, {
@@ -25,7 +24,7 @@ const initSlider = el => {
     },
     on: {
       slideChange() {
-        forEach.call(navLinks, (navLink, i) => {
+        navLinks.forEach((navLink, i) => {
           if (i === this.realIndex) {
             navLink.classList.add('is-active');
           } else {
@@ -38,7 +37,7 @@ const initSlider = el => {
 
   swiper.init();
 
-  forEach.call(navLinks, (navLink, i) => {
+  navLinks.forEach((navLink, i) => {
     navLink.addEventListener('click', () => {
       swiper.slideToLoop(i);
     });
@@ -48,7 +47,7 @@ const initSlider = el => {
 
 
 const tabSliders = () => {
-  forEach.call(sliders, el => {
+  sliders.forEach(el => {
     initSlider(el);
   });
 };

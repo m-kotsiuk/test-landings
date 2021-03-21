@@ -9,6 +9,7 @@ import selects from './components/_selects';
 import datepickers from './components/_datepickers';
 import counterFields from './components/_counterFields';
 import orderForms from './components/_orderForms';
+import modals from './components/_modals';
 
 
 
@@ -22,5 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   accordions();
   counterFields();
   orderForms();
+  modals();
 });
 

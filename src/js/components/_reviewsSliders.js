@@ -1,10 +1,9 @@
 import {Swiper, Pagination} from 'swiper';
 
-import { forEach } from '../utils';
 
 Swiper.use([Pagination]);
 
-const sliders = document.querySelectorAll('.js-reviews-slider');
+const sliders = [...document.querySelectorAll('.js-reviews-slider')];
 
 
 const initSlider = el => {
@@ -35,7 +34,7 @@ const initSlider = el => {
 };
 
 const reviewsSlider = () => {
-  forEach.call(sliders, el => {
+  sliders.forEach(el => {
     initSlider(el);
   });
 };

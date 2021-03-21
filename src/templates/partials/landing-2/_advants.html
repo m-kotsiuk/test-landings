@@ -1,0 +1,69 @@
+{%
+  set tabs = [
+    {
+      title: 'Easy-to-use interfaces on every platform',
+      desc: '<p>Since most of our features work in a completely automated way, you will mainly use our apps to discover new TV shows recommended for you and discuss the most interesting episodes with like-minded people.</p>',
+      icon: 'dashboard',
+      btnTitle: 'Customized Dashboard'
+    },
+    {
+      title: 'Automatic Day &amp; Night Modes',
+      desc: '<p>Since most of our features work in a completely automated way.</p>',
+      icon: 'night-mode',
+      btnTitle: 'Automatic Day &amp; Night Modes'
+    },
+    {
+      title: 'Integrated Chat Platform',
+      desc: '<p>Since most of our features work in a completely automated way, you will mainly use our apps to discover new TV shows recommended for you and discuss the most interesting episodes with like-minded people.</p>',
+      icon: 'chat',
+      btnTitle: 'Integrated Chat Platform'
+    }
+  ]
+%}
+
+<!-- begin advants -->
+<section class="advants">
+  <div class="container">
+    <div class="advants__inner">
+      <div class="advants__left">
+        <div class="swiper-container advants__slider js-tab-slider" data-slider="slider-1">
+          <div class="swiper-wrapper">
+            {% for tab in tabs %}
+            <div class="swiper-slide advants__slide">
+              <h2 class="h3 advants__title">{{ tab.title | safe }}</h2>
+              <div class="advants__desc">{{ tab.desc | safe }}</div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+         <ul class="advants__tablinks js-tab-slider-nav" data-slider="slider-1">
+            {% for i in range (0, tabs.length) %}
+            <li class="advants__tablink">
+              <button type="button" class="advants__tabbtn js-tab-slider-link">
+                {{ mixins.icon(tabs[i].icon) }}
+                <span>{{ tabs[i].btnTitle | safe }}</span>
+              </button>
+            </li>
+            {% endfor %}
+          </ul>
+      </div>
+      <div class="advants__right">
+        <div class="advants__img-mob">
+          {{ mixins.lazyImage({
+            src: 'img/landing-2/hero.png',
+            srcset: 'img/landing-2/hero.png 2x'
+          }) }}
+        </div>
+        <div class="advants__img-desk">
+          {{ mixins.lazyImage({
+            src: 'img/landing-2/preview.png',
+            srcset: 'img/landing-2/preview-2x.png 2x'
+          }) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end advants -->

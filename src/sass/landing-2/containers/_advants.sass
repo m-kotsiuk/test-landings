@@ -1,0 +1,116 @@
+.advants
+	overflow: hidden
+	padding-top: 20px
+
+	+md
+		padding-top: 130px
+		padding-bottom: 130px
+
+	&__inner
+		+md
+			display: flex
+
+	&__left
+		+md
+			width: 42%
+
+	&__right
+		+md
+			width: 58%
+			position: relative
+
+	&__img-mob
+		margin: 0 6px
+		height: 614px
+		position: relative
+		z-index: 1
+
+		+md
+			margin: 0
+			top: 65px
+			left: 65px
+			width: 330px
+			height: 580px
+		img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: contain
+
+	&__img-desk
+		display: none
+
+		+md
+			display: block
+			position: absolute
+			top: -92px
+			left: 140px
+			width: 860px
+			height: 558px
+
+			img
+				display: block
+				width: 100%
+				height: 100%
+				object-fit: contain
+
+	&__title
+		margin-bottom: 25px
+
+		+md
+			margin-bottom: 18px
+
+	&__slider
+		margin-bottom: 25px
+
+		+md
+			margin-bottom: 40px
+
+	&__left
+		margin-bottom: 33px
+
+	&__tablinks
+		max-width: 340px
+
+	&__tablink
+		&:not(:last-child)
+			margin-bottom: 16px
+
+	&__tabbtn
+		display: flex
+		width: 100%
+		align-items: center
+		opacity: 0.5
+		transition: opacity 0.25s, box-shadow 0.25s
+		padding: 17px
+		border-radius: 4px
+		font-weight: 600
+
+		+md
+			font-size: 16px
+
+		&.is-active
+			opacity: 1
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.05)
+
+		+hov
+			opacity: 1
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.05)
+
+
+		.icon
+			display: block
+			width: 20px
+			height: 20px
+			margin-right: 17px
+			fill: $primary
+
+		.icon-night-mode
+			width: 20px
+			height: 20px
+			padding: 2px
+			fill: $white
+			position: relative
+			background-color: $primary
+			border-radius: 50%
+

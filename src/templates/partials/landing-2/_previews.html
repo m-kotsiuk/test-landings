@@ -1,0 +1,23 @@
+<!-- previews -->
+<section class="previews">
+  <div class="container">
+    <div class="swiper-container previews__inner js-previews-slider">
+      <div class="swiper-wrapper">
+        {% for i in range(0, 7) %}
+        <div class="swiper-slide previews__slide">
+          <div class="previews__img">
+            {{
+              mixins.lazyImage({
+                src: 'img/landing-2/show-' + (i + 1) + '.jpg',
+                srcset: 'img/landing-2/show-' + (i + 1) + '-2x.jpg'
+              })
+            }}
+          </div>
+
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- previews -->

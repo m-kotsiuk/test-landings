@@ -1,0 +1,36 @@
+.previews
+	overflow: hidden
+	padding-top: 40px
+	padding-bottom: 40px
+
+	+md
+		padding-top: 70px
+		padding-bottom: 70px
+
+	&__inner
+		left: 50%
+		transform: translateX(-50%)
+		width: 176px * 7 + 16px * 6
+
+		+sm
+			width: 220px * 7 + 30px * 6
+
+
+	&__img
+		height: 265px
+		margin-top: 20px
+		margin-bottom: 20px
+
+		+sm
+			height: 330px
+
+
+	&__slide
+		box-sizing: border-box
+		img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 4px
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4)

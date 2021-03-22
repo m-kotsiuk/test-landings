@@ -1,0 +1,36 @@
+<!-- begin text-image -->
+<section class="text-image {{ block.mods }}">
+  <div class="container">
+    <div class="text-image__inner">
+      <div class="text-image__text">
+        {% if block.primary %}
+        <h1 class="h1 text-image__title">{{ block.title | safe }}</h1>
+        {% else %}
+        <h2 class="h2 text-image__title">{{ block.title | safe }}</h2>
+        {% endif %}
+
+         <div class="text-image__desc">{{ block.text | safe }}</div>
+
+         <div class="text-image__btn">
+          <a href="#" class="button {{ block.btnMod }}"><span>{{ block.btnText }}</span>{% if block.btnMod === 'button_download' %}{{ mixins.icon('download') }}{% endif %}</a>
+         </div>
+      </div>
+
+      <div class="text-image__img">
+        {{ mixins.lazyImage({
+          src: block.src,
+          srcset: block.srcset
+        }) }}
+      </div>
+
+      {% if block.withBg %}
+       <div class="text-image__dots">
+        {{ mixins.lazyImage({
+          src: 'img/landing-3/dots.svg'
+        }) }}
+       </dots>
+      {% endif %}
+    </div>
+  </div>
+</section>
+<!-- end text-image -->

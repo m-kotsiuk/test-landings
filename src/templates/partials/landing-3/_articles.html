@@ -1,0 +1,62 @@
+{%
+  set articles = [
+    {
+      imgSrc: 'img/landing-3/article-1.jpg',
+      imgSrcset: 'img/landing-3/article-1-2x.jpg 2x',
+      title: 'Disease detection, check up in the laboratory',
+      text: 'In this case, the role of the health laboratory is very important to do a disease detection...'
+    },
+    {
+      imgSrc: 'img/landing-3/article-2.jpg',
+      imgSrcset: 'img/landing-3/article-2-2x.jpg 2x',
+      title: 'Herbal medicines that are safe for consumption',
+      text: 'Herbal medicine is very widely used at this time because of its very good for your health...'
+    },
+    {
+      imgSrc: 'img/landing-3/article-3.jpg',
+      imgSrcset: 'img/landing-3/article-3-2x.jpg 2x',
+      title: 'Natural care for healthy facial skin',
+      text: 'A healthy lifestyle should start from now and also for your skin health. There are some...'
+    }
+  ]
+%}
+
+<!-- begin articles -->
+<section class="articles">
+  <div class="container">
+    <div class="articles__inner">
+
+      <h2 class="h2 articles__title">Check out our latest article</h2>
+
+      <div class="swiper-container articles-slider">
+        <div class="swiper-wrapper">
+          {% for article in articles %}
+          <div class="swiper-slide articles-slider__article">
+            <div class="articles-slider__top">
+              <div class="articles-slider__img">
+                {{ mixins.lazyImage({
+                  src: article.imgSrc,
+                  srcset: article.imgSrcset
+                }) }}
+              </div>
+
+              <h3 class="articles-slider__title">{{ article.title }}</h3>
+              <div class="articles-slider__text">
+                <p>{{ article.text }}</p>
+              </div>
+            </div>
+            <div class="article-slider__more">
+              <a href="#" class="more-link"><span>Read more</span>{{ mixins.icon('arrow-right') }}</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="article__btn">
+        <a href="#" class="button">View all</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end articles -->

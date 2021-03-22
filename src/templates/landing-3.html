@@ -5,5 +5,58 @@ title: Trafalgar
 
 {% block content %}
 
+  {% include "partials/landing-3/_header.html" %}
+
+  {%
+    set block = {
+      primary: true,
+      mods: 'text-image_primary',
+      title: 'Virtual healthcare for you',
+      text: '<p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>',
+      btnText: 'Consult today',
+      btnMod: 'button_primary',
+      withBg: true,
+      src: 'img/landing-3/ill-1.png',
+      srcset: 'img/landing-3/ill-1-2x.png 2x'
+    }
+  %}
+
+  {% include "partials/landing-3/_text-image.html" %}
+
+  {% include "partials/landing-3/_services.html" %}
+
+  {%
+    set block = {
+      mods: 'text-image_reversed',
+      title: 'Leading healthcare providers',
+      text: '<p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>',
+      btnText: 'Learn more',
+      src: 'img/landing-3/ill-2.png',
+      srcset: 'img/landing-3/ill-2-2x.png 2x'
+    }
+  %}
+
+  {% include "partials/landing-3/_text-image.html" %}
+
+  {%
+    set block = {
+      mods: 'text-image_regular',
+      title: 'Download our mobile apps',
+      text: '<p>Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>',
+      btnText: 'Learn more',
+      btnMod: 'button_download',
+      withBg: true,
+      src: 'img/landing-3/ill-3.png',
+      srcset: 'img/landing-3/ill-3-2x.png 2x'
+    }
+  %}
+
+  {% include "partials/landing-3/_text-image.html" %}
+
+  {% include "partials/landing-3/_testimonials.html" %}
+
+  {% include "partials/landing-3/_articles.html" %}
+
+  {% include "partials/landing-3/_footer.html" %}
 
 {% endblock %}

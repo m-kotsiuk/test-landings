@@ -1,0 +1,46 @@
+<!-- begin testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <div class="testimonials__inner">
+       <h2 class="h2 testimonials__title">What our customer are saying</h2>
+      <div class="swiper-container testimonials-slider">
+        <div class="swiper-wrapper">
+          {% for i in range(0, 4) %}
+          <div class="swiper-slide testimonials-slider__slide">
+              <div class="testimonials-slider__left">
+                <div class="person">
+                  <div class="person__img">
+                    {{ mixins.lazyImage({
+                        src: 'img/landing-3/founder.jpg',
+                        srcset: 'img/landing-3/founder-2x.jpg'
+                      }) }}
+                  </div>
+                  <div class="person__info">
+                    <h3 class="person__name">Edward Newgate</h3>
+                    <div class="person__position">Founder Circle</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-slider__right">
+                <blockquote class="testimonials-slider__text">
+                  <p>“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+                </blockquote>
+              </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="testimonials__bg-top">
+        {{ mixins.lazyImage({
+          src: 'img/landing-3/dots.svg'
+        }) }}
+      </div>
+      <div class="testimonials__bg-bottom">
+        {{ mixins.lazyImage({
+          src: 'img/landing-3/dots.svg'
+        }) }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->

@@ -35,6 +35,15 @@ input, button
     appearance: none
     font: inherit
     background-color: transparent
+    &:invalid
+        box-shadow: none
+
+    &:-moz-submit-invalid
+        box-shadow: none
+
+    &:-moz-ui-invalid
+        box-shadow:none
+
 div, input, textarea, select,button,
 h1,h2,h3,h4,h5,h6,a,span,a:focus
     outline: none

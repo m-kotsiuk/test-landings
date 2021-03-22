@@ -1,0 +1,25 @@
+{%
+  set links = ['Home', 'Find a doctor', 'Apps', 'Testimonials', 'About us']
+%}
+
+<!-- begin header-->
+<div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="#" class="logo"><span>T</span>Trafalgar</a>
+      </div>
+
+      <div class="header__nav">
+        <ul class="header__nav-links">
+          {% for i in range(0, links.length) %}
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-item{% if not i %} is-active{% endif %}">{{ links[i] }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end header -->

@@ -85,7 +85,7 @@
               <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
             </div>
             <div class="services__slider">
-              <div class="swiper-container services-slider js-services-slider">
+              <div class="swiper-container services-slider js-resp-slider">
                 <div class="swiper-wrapper services-slider__wrapper">
                   <div class="swiper-slide services-slider__slide">
                     <div class="service-card">
@@ -219,15 +219,15 @@
       <!-- begin testimonials -->
       <section class="testimonials">
         <div class="container">
-          <div class="testimonials__inner">
-            <h2 class="h2 testimonials__title">What our customer are saying</h2>
-            <div class="swiper-container testimonials-slider">
+          <div class="testimonials__inner js-testimonials">
+            <h2 class="h2 h2_center testimonials__title">What our customer are saying</h2>
+            <div class="swiper-container testimonials-slider js-testimonials-slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide testimonials-slider__slide">
                   <div class="testimonials-slider__left">
                     <div class="person">
                       <div class="person__img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg" alt="" class="lazyload " />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg 2x" alt="" class="lazyload " />
                       </div>
                       <div class="person__info">
                         <h3 class="person__name">Edward Newgate</h3>
@@ -245,7 +245,7 @@
                   <div class="testimonials-slider__left">
                     <div class="person">
                       <div class="person__img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg" alt="" class="lazyload " />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg 2x" alt="" class="lazyload " />
                       </div>
                       <div class="person__info">
                         <h3 class="person__name">Edward Newgate</h3>
@@ -263,7 +263,7 @@
                   <div class="testimonials-slider__left">
                     <div class="person">
                       <div class="person__img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg" alt="" class="lazyload " />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg 2x" alt="" class="lazyload " />
                       </div>
                       <div class="person__info">
                         <h3 class="person__name">Edward Newgate</h3>
@@ -281,7 +281,7 @@
                   <div class="testimonials-slider__left">
                     <div class="person">
                       <div class="person__img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg" alt="" class="lazyload " />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/founder.jpg" data-srcset="img/landing-3/founder-2x.jpg 2x" alt="" class="lazyload " />
                       </div>
                       <div class="person__info">
                         <h3 class="person__name">Edward Newgate</h3>
@@ -300,6 +300,19 @@
             <div class="testimonials__bg-top">
               <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/dots.svg" data-srcset="" alt="" class="lazyload " />
             </div>
+            <div class="testimonials-slider__nav">
+              <div class="testimonials-slider__arrow testimonials-slider__arrow_left js-testimonials-left">
+                <svg class="icon icon-arrow-left">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </div>
+              <div class="testimonials-slider__pagination js-testimonials-nav"></div>
+              <div class="testimonials-slider__arrow testimonials-slider__arrow_right js-testimonials-right">
+                <svg class="icon icon-arrow-right">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
             <div class="testimonials__bg-bottom">
               <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/dots.svg" data-srcset="" alt="" class="lazyload " />
             </div>
@@ -311,67 +324,84 @@
       <section class="articles">
         <div class="container">
           <div class="articles__inner">
-            <h2 class="h2 articles__title">Check out our latest article</h2>
-            <div class="swiper-container articles-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide articles-slider__article">
-                  <div class="articles-slider__top">
-                    <div class="articles-slider__img">
-                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/article-1.jpg" data-srcset="img/landing-3/article-1-2x.jpg 2x" alt="" class="lazyload " />
-                    </div>
-                    <h3 class="articles-slider__title">Disease detection, check up in the laboratory</h3>
-                    <div class="articles-slider__text">
-                      <p>In this case, the role of the health laboratory is very important to do a disease detection...</p>
-                    </div>
-                  </div>
-                  <div class="article-slider__more">
-                    <a href="#" class="more-link"><span>Read more</span>
-                      <svg class="icon icon-arrow-right">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide articles-slider__article">
-                  <div class="articles-slider__top">
-                    <div class="articles-slider__img">
-                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/article-2.jpg" data-srcset="img/landing-3/article-2-2x.jpg 2x" alt="" class="lazyload " />
-                    </div>
-                    <h3 class="articles-slider__title">Herbal medicines that are safe for consumption</h3>
-                    <div class="articles-slider__text">
-                      <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
+            <h2 class="h2 h2_center articles__title">Check out our latest article</h2>
+            <div class="articles__slider">
+              <div class="swiper-container articles-slider js-resp-slider">
+                <div class="swiper-wrapper articles-slider__wrapper">
+                  <div class="swiper-slide articles-slider__slide">
+                    <div class="articles-slider__preview">
+                      <div class="articles-slider__top">
+                        <div class="articles-slider__img">
+                          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/article-1.jpg" data-srcset="img/landing-3/article-1-2x.jpg 2x" alt="" class="lazyload " />
+                        </div>
+                        <h3 class="articles-slider__title">Disease detection, check up in the laboratory</h3>
+                        <div class="articles-slider__text">
+                          <p>In this case, the role of the health laboratory is very important to do a disease detection...</p>
+                        </div>
+                      </div>
+                      <div class="articles-slider__more">
+                        <a href="#" class="more-link"><span>Read more</span>
+                          <svg class="icon icon-arrow-right">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <div class="article-slider__more">
-                    <a href="#" class="more-link"><span>Read more</span>
-                      <svg class="icon icon-arrow-right">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide articles-slider__article">
-                  <div class="articles-slider__top">
-                    <div class="articles-slider__img">
-                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/article-3.jpg" data-srcset="img/landing-3/article-3-2x.jpg 2x" alt="" class="lazyload " />
+                  <div class="swiper-slide articles-slider__slide">
+                    <div class="articles-slider__preview">
+                      <div class="articles-slider__top">
+                        <div class="articles-slider__img">
+                          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/article-2.jpg" data-srcset="img/landing-3/article-2-2x.jpg 2x" alt="" class="lazyload " />
+                        </div>
+                        <h3 class="articles-slider__title">Herbal medicines that are safe for consumption</h3>
+                        <div class="articles-slider__text">
+                          <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                        </div>
+                      </div>
+                      <div class="articles-slider__more">
+                        <a href="#" class="more-link"><span>Read more</span>
+                          <svg class="icon icon-arrow-right">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                    <h3 class="articles-slider__title">Natural care for healthy facial skin</h3>
-                    <div class="articles-slider__text">
-                      <p>A healthy lifestyle should start from now and also for your skin health. There are some...</p>
-                    </div>
                   </div>
-                  <div class="article-slider__more">
-                    <a href="#" class="more-link"><span>Read more</span>
-                      <svg class="icon icon-arrow-right">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                      </svg>
-                    </a>
+                  <div class="swiper-slide articles-slider__slide">
+                    <div class="articles-slider__preview">
+                      <div class="articles-slider__top">
+                        <div class="articles-slider__img">
+                          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/article-3.jpg" data-srcset="img/landing-3/article-3-2x.jpg 2x" alt="" class="lazyload " />
+                        </div>
+                        <h3 class="articles-slider__title">Natural care for healthy facial skin</h3>
+                        <div class="articles-slider__text">
+                          <p>A healthy lifestyle should start from now and also for your skin health. There are some...</p>
+                        </div>
+                      </div>
+                      <div class="articles-slider__more">
+                        <a href="#" class="more-link"><span>Read more</span>
+                          <svg class="icon icon-arrow-right">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="articles__dots-top">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/dots.svg" data-srcset="" alt="" class="lazyload " />
+              </div>
+              <div class="articles__bg">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/bg.svg" data-srcset="" alt="" class="lazyload " />
+              </div>
             </div>
-            <div class="article__btn">
+            <div class="articles__btn">
               <a href="#" class="button">View all</a>
+            </div>
+            <div class="articles__dots-bottom">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/dots.svg" data-srcset="" alt="" class="lazyload " />
             </div>
           </div>
         </div>
@@ -382,9 +412,7 @@
         <div class="container">
           <div class="footer__inner">
             <div class="footer__info">
-              <div class="footer__logo">
-                <a href="#" class="logo"><span>T</span>Trafalgar</a>
-              </div>
+              <a href="#" class="logo footer__logo"><span>T</span>Trafalgar</a>
               <div class="footer__text">
                 <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
               </div>
@@ -417,6 +445,10 @@
                   <a href="#" class="footer__link">How it works</a>
                 </div>
               </div>
+            </div>
+            <div class="footer__copyright">&copy;Trafalgar PTY LTD 2020. All rights reserved</div>
+            <div class="footer__dots">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/dots.svg" data-srcset="" alt="" class="lazyload " />
             </div>
           </div>
         </div>

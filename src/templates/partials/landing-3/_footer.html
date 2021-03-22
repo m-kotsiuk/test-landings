@@ -20,9 +20,7 @@
   <div class="container">
     <div class="footer__inner">
       <div class="footer__info">
-        <div class="footer__logo">
-          <a href="#" class="logo"><span>T</span>Trafalgar</a>
-        </div>
+        <a href="#" class="logo footer__logo"><span>T</span>Trafalgar</a>
         <div class="footer__text">
           <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
         </div>
@@ -38,6 +36,14 @@
           </div>
         </div>
         {% endfor %}
+      </div>
+
+      <div class="footer__copyright">&copy;Trafalgar PTY LTD 2020. All rights reserved</div>
+
+      <div class="footer__dots">
+        {{ mixins.lazyImage({
+          src: 'img/landing-3/dots.svg'
+        }) }}
       </div>
     </div>
   </div>

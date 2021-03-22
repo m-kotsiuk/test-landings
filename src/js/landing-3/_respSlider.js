@@ -1,6 +1,6 @@
 import {  Swiper } from 'swiper';
 
-const sliders = [...document.querySelectorAll('.js-services-slider')];
+const sliders = [...document.querySelectorAll('.js-resp-slider')];
 
 const initSlider = el => {
   let slider = null;
@@ -41,10 +41,10 @@ const initSlider = el => {
 };
 
 
-const servicesSlider = () => {
+const respSliders = () => {
   sliders.forEach(el => {
     initSlider(el);
   });
 };
 
-export default servicesSlider;
+export default respSliders;

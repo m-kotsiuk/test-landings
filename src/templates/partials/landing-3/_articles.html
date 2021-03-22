@@ -26,35 +26,61 @@
   <div class="container">
     <div class="articles__inner">
 
-      <h2 class="h2 articles__title">Check out our latest article</h2>
+      <h2 class="h2 h2_center articles__title">Check out our latest article</h2>
 
-      <div class="swiper-container articles-slider">
-        <div class="swiper-wrapper">
-          {% for article in articles %}
-          <div class="swiper-slide articles-slider__article">
-            <div class="articles-slider__top">
-              <div class="articles-slider__img">
-                {{ mixins.lazyImage({
-                  src: article.imgSrc,
-                  srcset: article.imgSrcset
-                }) }}
-              </div>
+      <div class="articles__slider">
+        <div class="swiper-container articles-slider js-resp-slider">
+          <div class="swiper-wrapper articles-slider__wrapper">
+            {% for article in articles %}
+            <div class="swiper-slide articles-slider__slide">
+              <div class="articles-slider__preview">
+                <div class="articles-slider__top">
+                  <div class="articles-slider__img">
+                    {{ mixins.lazyImage({
+                      src: article.imgSrc,
+                      srcset: article.imgSrcset
+                    }) }}
+                  </div>
 
-              <h3 class="articles-slider__title">{{ article.title }}</h3>
-              <div class="articles-slider__text">
-                <p>{{ article.text }}</p>
+                  <h3 class="articles-slider__title">{{ article.title }}</h3>
+                  <div class="articles-slider__text">
+                    <p>{{ article.text }}</p>
+                  </div>
+                </div>
+
+                 <div class="articles-slider__more">
+                  <a href="#" class="more-link"><span>Read more</span>{{ mixins.icon('arrow-right') }}</a>
+                </div>
               </div>
             </div>
-            <div class="article-slider__more">
-              <a href="#" class="more-link"><span>Read more</span>{{ mixins.icon('arrow-right') }}</a>
-            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
+        </div>
+
+        <div class="articles__dots-top">
+          {{ mixins.lazyImage({
+            src: 'img/landing-3/dots.svg'
+          }) }}
+        </div>
+
+        <div class="articles__bg">
+          {{ mixins.lazyImage({
+            src: 'img/landing-3/bg.svg'
+          }) }}
         </div>
       </div>
 
-      <div class="article__btn">
+
+      <div class="articles__btn">
         <a href="#" class="button">View all</a>
+      </div>
+
+
+
+      <div class="articles__dots-bottom">
+        {{ mixins.lazyImage({
+          src: 'img/landing-3/dots.svg'
+        }) }}
       </div>
     </div>
   </div>

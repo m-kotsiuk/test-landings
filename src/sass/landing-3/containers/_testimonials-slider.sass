@@ -1,0 +1,67 @@
+.testimonials-slider
+	margin: 0 -20px
+
+	+sm
+		margin: 0 -60px
+
+	+md
+		margin: 0 -120px
+
+
+	&__slide
+
+		padding: 0 20px
+		box-sizing: border-box
+
+		+sm
+			padding: 0 60px
+
+		+md
+			padding: 0 120px
+
+		+rmin(1200)
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+	&__left
+		margin-bottom: 20px
+
+		+rmin(1200)
+			margin-bottom: 0
+			width: calc(100% - 440px)
+
+	&__right
+
+		+rmin(1200)
+			width: 420px
+
+
+	&__nav
+		position: absolute
+		left: 0
+		z-index: 1
+		top: calc(100% + 40px)
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+
+
+	&__arrow
+		width: 30px
+		height: 27px
+		.icon
+			fill: $colorPrimary
+
+	&__pagination
+		margin: 0 7.5%
+		.swiper-pagination-bullet
+			margin: 0 9px
+			width: 10px
+			height: 10px
+			opacity: 0.3
+			background: $colorPrimary
+
+			&.swiper-pagination-bullet-active
+				opacity: 1

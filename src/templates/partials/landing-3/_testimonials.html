@@ -1,9 +1,9 @@
 <!-- begin testimonials -->
 <section class="testimonials">
   <div class="container">
-    <div class="testimonials__inner">
-       <h2 class="h2 testimonials__title">What our customer are saying</h2>
-      <div class="swiper-container testimonials-slider">
+    <div class="testimonials__inner js-testimonials">
+       <h2 class="h2 h2_center testimonials__title">What our customer are saying</h2>
+      <div class="swiper-container testimonials-slider js-testimonials-slider">
         <div class="swiper-wrapper">
           {% for i in range(0, 4) %}
           <div class="swiper-slide testimonials-slider__slide">
@@ -12,7 +12,7 @@
                   <div class="person__img">
                     {{ mixins.lazyImage({
                         src: 'img/landing-3/founder.jpg',
-                        srcset: 'img/landing-3/founder-2x.jpg'
+                        srcset: 'img/landing-3/founder-2x.jpg 2x'
                       }) }}
                   </div>
                   <div class="person__info">
@@ -29,11 +29,23 @@
           </div>
           {% endfor %}
         </div>
+
       </div>
+
       <div class="testimonials__bg-top">
-        {{ mixins.lazyImage({
-          src: 'img/landing-3/dots.svg'
-        }) }}
+          {{ mixins.lazyImage({
+            src: 'img/landing-3/dots.svg'
+          }) }}
+        </div>
+
+      <div class="testimonials-slider__nav">
+        <div class="testimonials-slider__arrow testimonials-slider__arrow_left js-testimonials-left">
+          {{ mixins.icon('arrow-left') }}
+        </div>
+        <div class="testimonials-slider__pagination js-testimonials-nav"></div>
+          <div class="testimonials-slider__arrow testimonials-slider__arrow_right js-testimonials-right">
+          {{ mixins.icon('arrow-right') }}
+        </div>
       </div>
       <div class="testimonials__bg-bottom">
         {{ mixins.lazyImage({

@@ -1,0 +1,94 @@
+.footer
+	color: $colorBg
+	background-image: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%)
+	padding-top: 40px
+	padding-bottom: 40px
+	overflow: hidden
+
+	+sm
+		padding-top: 60px
+		padding-bottom: 50px
+
+	+md
+		padding-top: 120px
+		padding-bottom: 100px
+
+
+	&__logo
+		color: $colorBg
+		display: inline-block
+		margin-bottom: 16px
+
+		span:first-child
+			color: $colorPrimary
+			background-color: $colorBg
+
+
+	&__inner
+		position: relative
+
+		+sm
+			display: flex
+			justify-content: space-between
+
+
+	&__cols
+		padding-top: 5px
+		display: flex
+		flex-wrap: wrap
+
+		+sm
+			width: 100%
+			max-width: 750px
+
+	&__col
+		width: 50%
+		margin-bottom: 20px
+
+		+sm
+			margin-bottom: 0
+			padding-left: 9%
+			width: 33.333%
+
+	&__col-name
+		font-size: 20px
+		font-weight: 700
+		margin-bottom: 24px
+
+
+	&__info
+
+		max-width: 400px
+		margin-bottom: 20px
+
+		+sm
+			margin-bottom: 0
+			padding-right: 10px
+			max-width: 250px
+
+		+md
+			max-width: 400px
+
+	&__link
+		display: block
+		margin-bottom: 10px
+
+
+	&__copyright
+		font-size: 16px
+		+sm
+			position: absolute
+			bottom: -20px
+			left: 0
+
+		+md
+			bottom: 10px
+
+
+	&__dots
+		position: absolute
+		bottom: -130px
+		left: -60px
+
+		+rmin(1530)
+			left: -210px

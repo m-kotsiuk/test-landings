@@ -1,0 +1,66 @@
+{%
+  set slides = [
+    {
+      title: 'Productivity',
+      text: '<p>Silent sir say desire fat him letter. Whatever settling goodness too and honoured she building answered her. Strongly thoughts remember mr to do consider.</p>'
+    },
+    {
+      title: 'Manangement',
+      text: '<p>Silent sir say desire fat him letter. Whatever settling goodness too and honoured she building answered her. Strongly thoughts remember mr to do consider.</p>'
+    },
+    {
+      title: 'Time tracking',
+      text: '<p>Silent sir say desire fat him letter. Whatever settling goodness too and honoured she building answered her. Strongly thoughts remember mr to do consider.</p>'
+    },
+    {
+      title: 'Payment',
+      text: '<p>Silent sir say desire fat him letter. Whatever settling goodness too and honoured she building answered her. Strongly thoughts remember mr to do consider.</p>'
+    }
+  ]
+%}
+
+<!-- begin section-advants -->
+<section class="section-advants">
+  <div class="container">
+    <div class="section-advants__inner">
+
+      <div class="section-advants__info">
+        <h2 class="h2 section-advants__title">Everything on mobile</h2>
+        <h3 class="h3 section-advants__subtitle">Use your android or ios device to manage everything.</h3>
+        <div class="section-advants__desc">
+          <p>Silent sir say desire fat him letter. Whatever settling goodness too and honoured she building answered her. Strongly thoughts remember mr to do consider.</p>
+        </div>
+      </div>
+
+      <div class="section-advants__img">
+        {{ mixins.lazyImage({
+          src: 'img/landing-4/mobile.png',
+          srcset: 'img/landing-4/mobile-2x.png 2x'
+        }) }}
+      </div>
+
+      <div class="section-advants__slider">
+        <div class="tabs-slider js-tabs-slider">
+          <div class="swiper-container tabs-slider__tablinks">
+            <div class="swiper-wrapper tabs-slider__tablinks-wrapper">
+              {% for slide in slides %}
+              <div class="swiper-slide tabs-slider__tablink-slide">{{ slide.title }}</div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="swiper-container tabs-slider__tabcontents">
+            <div class="swiper-wrapper tabs-slider__tabcontents-wrapper">
+              {% for slide in slides %}
+               <div class="swiper-slide tabs-slider__tabcontents-slide">
+                {{ slide.text | safe }}
+               </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section-advants -->

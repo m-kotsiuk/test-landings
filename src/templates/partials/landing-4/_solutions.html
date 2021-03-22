@@ -1,0 +1,47 @@
+{%
+  set solutions = [
+    {
+      icon: 'img/landing-4/p-heart.svg',
+      title: 'One Platform, <strong>Solves Everything</strong>',
+      text: '<p>Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>',
+      link: 'Get xPider Now'
+    },
+    {
+      icon: 'img/landing-4/grid.svg',
+      title: 'Fastest Management, <strong>Easy to Organize</strong>',
+      text: '<p>Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>',
+      link: 'Find out more'
+    }
+  ]
+%}
+
+<!-- begin section-solutions -->
+<section class="section-solutions">
+  <div class="container">
+    <div class="section-solutions__inner">
+      <h2 class="h2 section-solutions__title">xPider makes your life easy</h2>
+      <h3 class="h3 section-solutions__subtitle">Make your life easy, get a better way to communicate.</h3>
+
+      <div class="section-solutions__solutions">
+        {% for solution in solutions %}
+        <div class="solution">
+          <div class="solution__icon">
+              {{ mixins.lazyImage({
+                src: solution.icon
+              }) }}
+          </div>
+          <h4 class="solution__title">{{ solution.title | safe }}</h4>
+
+          <div class="solution__desc">{{ solution.desc | safe }}</div>
+
+          <div class="solution__btn">
+            <a href="#" class="link-more">{{ solution.link }}</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end section-solutions -->

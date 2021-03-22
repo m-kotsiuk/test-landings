@@ -1,0 +1,66 @@
+
+{% set bottomLinks = ['Status', 'Privacy &amp; Terms', 'Contact Us'] %}
+{% set socials = ['facebook', 'twitter', 'dribble'] %}
+{%
+  set cols = [
+    {
+      name: 'Company',
+      links: ['About Us', 'Careers', 'Blog', 'Press', 'Brand', 'Guidelines']
+    },
+    {
+      name: 'Product',
+      links: ['Why xPider?', 'Enterprise', 'Customer', 'Stories', 'Pricing', 'Security']
+    },
+    {
+      name: 'Resources',
+      links: ['Download', 'Help', 'Center', 'Guides', 'Partners', 'Events']
+    }
+  ]
+%}
+<!-- begin footer -->
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__bg">
+      {{ mixins.icon('net') }}
+    </div>
+    <div class="footer__inner">
+      <div class="footer__logo">
+         {{ mixins.icon('net') }}
+      </div>
+
+      <div class="footer__cols">
+        {% for col in cols %}
+        <div class="footer__col">
+          <div class="footer__col-title">{{ col.name }}</div>
+          <div class="footer__col-links">
+            {% for link in col.links %}
+            <a href="#" class="footer__col-link">{{ link }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-links">
+        {% for link in bottomLinks %}
+        <a href="#" class="footer__bottom-link">{{ link | safe }}</a>
+        {% endfor %}
+      </div>
+
+      <div class="footer__bottom-right">
+        <div class="footer__langs">
+
+        </div>
+
+        <div class="footer__socials">
+          {% for link in socials %}
+          <a href="#" class="footer__social-link">{{ mixins.icon(link) }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->

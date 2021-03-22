@@ -21,6 +21,7 @@ function createConfig(env) {
       'landing-1': './landing-1.js',
       'landing-2': './landing-2.js',
       'landing-3': './landing-3.js',
+      'landing-4': './landing-4.js',
     },
     output: {
       path: path.join(__dirname, config.dest.js),

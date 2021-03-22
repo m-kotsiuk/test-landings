@@ -1,0 +1,47 @@
+{%
+  set benefits = [
+    {
+      icon: 'img/landing-4/family.svg',
+      title: 'One Platform',
+      text: '<p><strong>No more Mulitple Platforms.</strong> Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>'
+    },
+    {
+      icon: 'img/landing-4/b-meeting.svg',
+      title: 'Communication',
+      text: '<p><strong>No more hassle in communication.</strong> New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended.</p>'
+    },
+    {
+      icon: 'img/landing-4/filter-organization.svg',
+      title: 'Project Management',
+      text: '<p><strong>Easily manage your projects.</strong> Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried.</p>'
+    }
+  ]
+%}
+
+<!-- begin section-about -->
+<section class="section-about">
+  <div class="container">
+    <h2 class="h2 section-about__title">Why choose xPider?</h2>
+    <h3 class="h3 section-about__subtitle">A simple, proven way to boost your team performance.</h3>
+
+    <ul class="benefits">
+      {% for item in benefits %}
+      <li class="benefits__item">
+        <a href="#" class="benefits__link">
+          <div class="benefits__top">
+            <div class="benefits__icon">
+              {{ mixins.lazyImage({
+                src: item.icon
+              }) }}
+            </div>
+            <div class="benefits__title">{{ item.title }}</div>
+          </div>
+
+          <div class="benefits__text">{{ item.text | safe }}</div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- end section-about -->

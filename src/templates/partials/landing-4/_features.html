@@ -1,0 +1,54 @@
+{%
+  set features = [
+    {
+      icon: 'img/landing-4/book-open.svg',
+      title: 'Installation Guide'
+    },
+    {
+      icon: 'img/landing-4/phone.svg',
+      title: 'Live call support'
+    },
+    {
+      icon: 'img/landing-4/preferences-circle.svg',
+      title: 'Easy setup process'
+    }
+  ]
+%}
+
+
+<!-- begin section-features -->
+<section class="section-features">
+  <div class="container">
+    <div class="section-features__inner">
+      <h2 class="h2 section-features__title">More than a software</h2>
+      <h3 class="h3 section-features__subtitle">The proper guide that helps you to unlock the real potential.</h3>
+
+      <div class="section__features__img">
+         {{ mixins.lazyImage({
+            src: 'img/landing-4/guide.jpg',
+            srcset: 'img/landing-4/guide-2x.jpg 2x'
+          }) }}
+      </div>
+
+      <div class="section-features__features">
+        {% for feature in features %}
+          <div class="section-features__feature">
+            <div class="section-features__feature-top">
+               <div class="section-features__feature-icon">
+                {{ mixins.lazyImage({
+                  src: feature.icon
+                }) }}
+              </div>
+              <div class="section-features__feature-title">{{ feature.title }}</div>
+              <div class="section-features__feature-desc">
+                <p>No more Mulitple Platforms. Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end section-features -->

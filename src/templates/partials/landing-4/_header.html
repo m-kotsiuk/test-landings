@@ -1,0 +1,51 @@
+{%
+  set links = [
+    {
+      text: 'Features'
+    },
+    {
+      text: 'Pricing'
+    },
+    {
+      text: 'Pages',
+      subLinks: ['Page 1', 'Page 2', 'Page 3']
+    },
+    {
+      text: 'Get started now',
+      isBtn: true
+    }
+  ]
+%}
+
+<!-- begin header -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="img/landing-4/logo.svg" alt="" />
+      </a>
+
+       <div class="menu header__menu js-menu">
+        <div class="menu__inner">
+          <div class="menu__content">
+            <ul class="menu__list">
+              {% for link in links %}
+              <li class="menu__item">
+                <a href="#" class="menu__link">{{ link.text }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <button class="burger header__burger js-menu-btn" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+<!-- end header -->

@@ -1,0 +1,87 @@
+.dropdown
+	$this: &
+	position: relative
+
+	&__wrapper
+		position: absolute
+		top: 100%
+		min-width: 100%
+		overflow: hidden
+		pointer-events: none
+
+	&__holder
+		margin-right: -10px
+		padding-right: 15px
+		margin-left: -10px
+		padding-left: 10px
+		padding-top: 10px
+		padding-bottom: 10px
+		transform: translateY(-20px)
+		opacity: 0
+		pointer-events: none
+		transition: transform 0.4s, opacity 0.4s
+
+	&__links
+		max-height: 240px
+		padding: 5px
+		box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		background-color: rgba($primary, 0.2)
+		overflow: auto
+
+
+
+	&__link
+		display: block
+		font-size: 16px
+		width: 100%
+		text-align: left
+		padding: 5px
+		white-space: nowrap
+		border-radius: 6px
+		transition: color 0.25s, background-color 0.25s
+
+		+hov
+			color: $secondary
+
+	&__btn
+		width: 100%
+		display: block
+		color:  $secondary
+		font-size: 17px
+		text-align: left
+		position: relative
+		padding-right: 20px
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 14px
+			right: 0
+			width: 8px
+			height: 2px
+			background-color: $secondary
+
+		&::before
+			right: 4px
+			transform: rotate(45deg)
+
+		&::after
+			transform: rotate(-45deg)
+
+	&.is-open
+		z-index: 1
+
+		#{$this}__btn
+
+			&::before
+				transform: rotate(-45deg)
+
+			&::after
+				transform: rotate(45deg)
+
+		#{$this}__holder
+			pointer-events: auto
+			opacity: 1
+			transform: translateY(0)

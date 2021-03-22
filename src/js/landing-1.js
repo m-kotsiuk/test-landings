@@ -2,7 +2,7 @@ import 'lazysizes';
 import 'moment';
 import menu from './shared/_menu';
 import tabSliders from './shared/_tabSliders';
-import dropdowns from './landing-1/_dropdowns';
+import dropdowns from './shared/_dropdowns';
 import accordions from './landing-1/_accordions';
 import reviewsSliders from './landing-1/_reviewsSliders';
 import selects from './landing-1/_selects';

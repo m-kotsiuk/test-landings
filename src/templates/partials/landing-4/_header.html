@@ -31,7 +31,22 @@
             <ul class="menu__list">
               {% for link in links %}
               <li class="menu__item">
-                <a href="#" class="menu__link">{{ link.text }}</a>
+                {% if link.subLinks %}
+                <div class="dropdown js-dropdown">
+                  <button type="button" class="dropdown__btn js-dropdown-btn">{{ link.text }}</button>
+                  <div class="dropdown__wrapper">
+                    <div class="dropdown__holder">
+                      <div class="dropdown__links">
+                        {% for sublink in link.subLinks %}
+                        <a href="#" class="dropdown__link js-dropdown-link">{{ sublink }}</a>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% else %}
+                <a href="#" class="menu__link{% if link.isBtn %} menu__link_btn{% endif %}">{{ link.text }}</a>
+                {%  endif %}
               </li>
               {% endfor %}
             </ul>

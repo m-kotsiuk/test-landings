@@ -30,10 +30,21 @@
                       <a href="#" class="menu__link">Pricing</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Pages</a>
+                      <div class="dropdown js-dropdown">
+                        <button type="button" class="dropdown__btn js-dropdown-btn">Pages</button>
+                        <div class="dropdown__wrapper">
+                          <div class="dropdown__holder">
+                            <div class="dropdown__links">
+                              <a href="#" class="dropdown__link js-dropdown-link">Page 1</a>
+                              <a href="#" class="dropdown__link js-dropdown-link">Page 2</a>
+                              <a href="#" class="dropdown__link js-dropdown-link">Page 3</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Get started now</a>
+                      <a href="#" class="menu__link menu__link_btn">Get started now</a>
                     </li>
                   </ul>
                 </div>
@@ -54,29 +65,31 @@
           <img src="img/landing-4/hero.jpg" srcset="img/landing-4/hero-2x.jpg" alt="" />
         </div>
         <div class="container hero__container">
-          <h1 class="h1 hero__title">xPider is coming to make your successful with business.</h1>
-          <div class="hero__desc">
-            <p>When you need a kickstart in your business and you have no time for coding for your website,<br />xPider will take that job for you and will build a great looking website in minutes.</p>
-          </div>
-          <div class="hero__links">
-            <a href="#" class="square-link">
-              <div class="square-link__icon">
-                <img src="img/landing-4/archery-target.svg" alt="" />
-              </div>
-              <div class="square-link__text">get started</div>
-            </a>
-            <a href="#" class="square-link">
-              <div class="square-link__icon">
-                <img src="img/landing-4/bill.svg" alt="" />
-              </div>
-              <div class="square-link__text">check price</div>
-            </a>
-            <a href="#" class="square-link">
-              <div class="square-link__icon">
-                <img src="img/landing-4/button-circle-play.svg" alt="" />
-              </div>
-              <div class="square-link__text">watch video</div>
-            </a>
+          <div class="hero__inner">
+            <h1 class="h1 hero__title">xPider is coming to make<br />your successful with business.</h1>
+            <div class="hero__desc">
+              <p>When you need a kickstart in your business and you have no time for coding for your website,<br />xPider will take that job for you and will build a great looking website in minutes.</p>
+            </div>
+            <div class="hero__links">
+              <a href="#" class="square-link is-active">
+                <div class="square-link__icon">
+                  <img src="img/landing-4/archery-target.svg" alt="" />
+                </div>
+                <div class="square-link__text">get started</div>
+              </a>
+              <a href="#" class="square-link">
+                <div class="square-link__icon">
+                  <img src="img/landing-4/bill.svg" alt="" />
+                </div>
+                <div class="square-link__text">check price</div>
+              </a>
+              <a href="#" class="square-link">
+                <div class="square-link__icon">
+                  <img src="img/landing-4/button-circle-play.svg" alt="" />
+                </div>
+                <div class="square-link__text">watch video</div>
+              </a>
+            </div>
           </div>
         </div>
       </section>

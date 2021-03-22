@@ -33,8 +33,18 @@ const initDropdown = el => {
 };
 
 const dropdowns = () => {
-  [...document.querySelectorAll('.js-dropdown')].forEach(el => {
+
+  const dropdownElems = document.querySelectorAll('.js-dropdown');
+
+  [...dropdownElems].forEach(el => {
     initDropdown(el);
+  });
+
+  document.addEventListener('click', event => {
+    const parent = event.target.closest('.js-dropdown');
+    dropdownElems.forEach(el => {
+      if (el !== parent) el.classList.remove('is-open');
+    });
   });
 };
 

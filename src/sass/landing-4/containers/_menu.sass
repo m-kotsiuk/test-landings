@@ -1,0 +1,82 @@
+.menu
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	padding: 80px 10px  20px
+	background-color: #6B0083
+	pointer-events: none
+	opacity: 0
+	overflow: auto
+
+	&.with-transition
+		transition: opacity 0.5s
+
+	+sm
+		background-color: transparent
+		opacity: 1
+		padding: 0
+		position: relative
+		top: 5px
+		pointer-events: auto
+		background-color: transparent
+		overflow: visible
+
+	&.is-open
+		opacity: 1
+		pointer-events: auto
+
+	&__inner
+		display: table
+		width: 100%
+		height: 100%
+		margin-left: auto
+		margin-right: auto
+
+		+sm
+			display: flex
+			justify-content: flex-end
+
+
+	&__content
+		display: table-cell
+		vertical-align: middle
+
+		+sm
+			display: flex
+			align-items: center
+
+	&__list
+		margin-bottom: 30px
+		+sm
+			display: flex
+			align-items: center
+			margin-bottom: 0
+
+	&__item
+		&:not(:last-child)
+			margin-bottom: 20px
+			+sm
+				margin-bottom: 0
+				margin-right: 20px
+
+			+md
+				margin-right: 44px
+
+	&__link
+		font-size: 17px
+		line-height: 1.2
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: color 0.25s
+		font-weight: 400
+		color: $secondary
+
+		&_btn
+			color: $primary
+			font-weight: 600
+			padding: 13px 20px
+			background-color: $white
+			border-radius: 5px

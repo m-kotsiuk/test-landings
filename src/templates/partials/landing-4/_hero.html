@@ -25,21 +25,25 @@
     />
   </div>
   <div class="container hero__container">
-    <h1 class="h1 hero__title">xPider is coming to make your successful with business.</h1>
-    <div class="hero__desc">
-      <p>When you need a kickstart in your business and you have no time for coding for your website,<br/>xPider will take that job for you and will build a great looking website in minutes.</p>
+
+    <div class="hero__inner">
+      <h1 class="h1 hero__title">xPider is coming to make<br/>your successful with business.</h1>
+      <div class="hero__desc">
+        <p>When you need a kickstart in your business and you have no time for coding for your website,<br/>xPider will take that job for you and will build a great looking website in minutes.</p>
+      </div>
+
+      <div class="hero__links">
+        {% for i in range(0, links.length) %}
+        <a href="#" class="square-link{% if not i %} is-active{% endif %}">
+          <div class="square-link__icon">
+            <img src="{{ links[i].icon }}" alt="" />
+          </div>
+          <div class="square-link__text">{{ links[i].text }}</div>
+        </a>
+        {% endfor %}
+      </div>
     </div>
 
-    <div class="hero__links">
-      {% for link in links %}
-      <a href="#" class="square-link">
-        <div class="square-link__icon">
-          <img src="{{ link.icon }}" alt="" />
-        </div>
-        <div class="square-link__text">{{ link.text }}</div>
-      </a>
-      {% endfor %}
-    </div>
   </div>
 </section>
 <!-- end hero -->

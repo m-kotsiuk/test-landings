@@ -1,0 +1,35 @@
+.benefits
+	display: flex
+	flex-wrap: wrap
+
+	&__item
+		width: 100%
+		padding-right: 20px
+		margin-bottom: 30px
+
+		+xs
+			width: 50%
+
+		+md
+			width: 33.33%
+
+	&__top
+		display: flex
+		align-items: center
+		margin-bottom: 10px
+
+	&__title
+		font-size: 20px
+		color: $white
+		font-weight: 700
+
+		+sm
+			font-size: 24px
+
+	&__text
+		strong
+			color: $primary
+			font-weight: 400
+
+	&__icon
+		margin-right: 20px

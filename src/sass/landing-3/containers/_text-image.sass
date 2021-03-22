@@ -1,0 +1,163 @@
+.text-image
+	overflow: hidden
+	$this: &
+
+	&__inner
+		position: relative
+
+		+sm
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+
+	&__title
+		margin-bottom: 30px
+
+
+	&__desc
+		margin-bottom: 40px
+
+	&__btn
+		text-align: center
+
+		+sm
+			text-align: left
+
+
+	&__text
+		margin-bottom: 20px
+
+		+sm
+			width: 380px
+
+		+md
+			width: 450px
+
+
+	&__img
+		position: relative
+		padding-bottom: 60%
+
+		img
+			position: absolute
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: contain
+
+			+sm
+				position: relative
+				width: auto
+				height: auto
+				max-height: 100%
+				max-width: 100%
+
+
+
+		+sm
+			max-height: none
+			width: calc(100% - 380px)
+			padding-bottom: 0
+
+		+md
+			width: calc(100% - 450px)
+
+
+	&__dots
+		position: absolute
+
+
+	&_primary
+		padding-top: 60px
+
+		+rmin(1280)
+			padding-top: 25px
+
+		#{$this}__text
+			margin-bottom: 24px
+
+			+sm
+				margin-bottom: 56px
+
+		#{$this}__img
+
+			+sm
+				left: 4%
+			+rmin(1280)
+				left: 8.5%
+
+		#{$this}__title
+			margin-bottom: 24px
+
+		#{$this}__desc
+			font-size: 18px
+			margin-bottom: 25px
+
+			+sm
+				font-size: 21px
+				margin-bottom: 50px
+
+		#{$this}__dots
+			position: absolute
+			left: -20px
+			top: -80px
+
+			+rmin(1540)
+				top: -20px
+				left: -20%
+
+	&_reversed
+		padding-top: 55px
+
+		+sm
+			padding-top: 110px
+
+		+md
+			padding-top: 220px
+
+		#{$this}__inner
+			+sm
+				flex-direction: row-reverse
+
+		#{$this}__img
+			+sm
+				position: relative
+				left: -5%
+
+		#{$this}__text
+			+sm
+				position: relative
+				left: -2%
+
+	&_regular
+		padding-top: 55px
+
+		+sm
+			padding-top: 110px
+
+		+md
+			padding-top: 225px
+
+		#{$this}__text
+			+md
+				padding-left: 90px
+
+
+		#{$this}__img
+			+sm
+				position: relative
+				left: 10%
+
+
+		#{$this}__dots
+			display: none
+
+			+rmin(1540)
+				display: block
+				position: absolute
+				top: -220px
+				right: -20%
+
+
+

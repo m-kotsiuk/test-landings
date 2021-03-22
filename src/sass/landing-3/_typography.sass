@@ -11,6 +11,55 @@ body
 
 .h1
 	color: $colorBlack
+	line-height: 1.2
+	font-size: 32px
+
+	+sm
+		font-size: 42px
+
+	+md
+		font-size: 48px
 
 .h2
+	position: relative
 	color: $colorBlack
+	line-height: 1.5
+	font-size: 24px
+	padding-bottom: 20px
+
+	&::after
+		content: ''
+		position: absolute
+		top: 100%
+		left: 0
+		height: 2px
+		width: 56px
+		background-color: $colorBlack
+
+	&_center
+		text-align: center
+
+		&::after
+			left: 50%
+			transform: translateX(-50%)
+
+	+sm
+		font-size: 30px
+		padding-bottom: 26px
+
+	+md
+		font-size: 36px
+		padding-bottom: 32px
+
+
+.h3
+	color: $colorBlack
+	font-size: 20px
+	line-height: 1.5
+
+	+sm
+		font-size: 22px
+
+	+md
+		font-size: 24px
+

@@ -3,22 +3,34 @@
 %}
 
 <!-- begin header-->
-<div class="header">
+<div class="header js-header">
   <div class="container">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="#" class="logo"><span>T</span>Trafalgar</a>
+        <a href="#" class="logo"><span>T</span><span>Trafalgar</span></a>
       </div>
 
-      <div class="header__nav">
-        <ul class="header__nav-links">
-          {% for i in range(0, links.length) %}
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-item{% if not i %} is-active{% endif %}">{{ links[i] }}</a>
-          </li>
-          {% endfor %}
-        </ul>
+      <div class="menu header__menu js-menu">
+        <div class="menu__inner">
+          <div class="menu__content">
+            <ul class="menu__list">
+              {% for i in range(0, links.length) %}
+              <li class="menu__item">
+                <a href="#" class="menu__link{% if not i %} is-active{% endif %}">{{ links[i] }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
       </div>
+
+
+      <button class="burger header__burger js-menu-btn" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
   </div>
 </div>

@@ -1,0 +1,35 @@
+.header
+	$this: &
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	background-color: $colorBg
+	z-index: 10
+
+
+	&.is-shrinked
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1)
+		#{$this}__inner
+			height: 80px
+
+
+	&__logo
+		position: relative
+		z-index: 1
+
+	&__inner
+		height: 80px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		transition: height 0.4s
+
+		+md
+			height: 150px
+
+
+
+	&__burger
+		+sm
+			display: none

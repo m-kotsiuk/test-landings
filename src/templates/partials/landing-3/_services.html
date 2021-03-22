@@ -38,31 +38,46 @@
   <div class="container">
     <div class="services__inner">
 
-      <h2 class="services__title">Our services</h2>
+      <h2 class="h2 h2_center services__title">Our services</h2>
       <div class="services__desc">
         <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
       </div>
 
-      <div class="swiper-container services-slider services__slider">
-        <div class="swiper-wrapper services-slider__wrapper">
-          {% for service in services %}
-          <div class="swiper-slide services-slider__slide">
-            <div class="services-slider__icon">
-              {{ mixins.lazyImage({
-                src: service.icon
-              }) }}
+      <div class="services__slider">
+        <div class="swiper-container services-slider js-services-slider">
+          <div class="swiper-wrapper services-slider__wrapper">
+            {% for service in services %}
+            <div class="swiper-slide services-slider__slide">
+              <div class="service-card">
+                <div class="service-card__icon">
+                  {{ mixins.lazyImage({
+                    src: service.icon
+                  }) }}
+                </div>
+                <h3 class="h3 service-card__title">{{ service.title }}</h3>
+                <div class="service-card__text">{{ service.text | safe }}</div>
+              </div>
+
             </div>
-            <h3 class="h3 services-slider__title">{{ service.title }}</h3>
-            <div class="service-slider__text">{{ service.text | safe }}</div>
+            {% endfor %}
           </div>
-          {% endfor %}
+        </div>
+          <div class="services__dots">
+          {{ mixins.lazyImage({
+            src: 'img/landing-3/dots.svg'
+          }) }}
+        </div>
+        <div class="services__bg">
+          {{ mixins.lazyImage({
+            src: 'img/landing-3/bg.svg'
+          }) }}
         </div>
       </div>
 
       <div class="services__btn">
         <a href="#" class="button">Learn more</a>
       </div>
-      <div class="services__bg"></div>
+
     </div>
   </div>
 </section>

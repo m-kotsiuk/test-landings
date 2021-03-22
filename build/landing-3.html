@@ -15,31 +15,40 @@
     <!-- BEGIN content -->
     <div class="out">
       <!-- begin header-->
-      <div class="header">
+      <div class="header js-header">
         <div class="container">
           <div class="header__inner">
             <div class="header__logo">
-              <a href="#" class="logo"><span>T</span>Trafalgar</a>
+              <a href="#" class="logo"><span>T</span><span>Trafalgar</span></a>
             </div>
-            <div class="header__nav">
-              <ul class="header__nav-links">
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-item is-active">Home</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-item">Find a doctor</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-item">Apps</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-item">Testimonials</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-item">About us</a>
-                </li>
-              </ul>
+            <div class="menu header__menu js-menu">
+              <div class="menu__inner">
+                <div class="menu__content">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href="#" class="menu__link is-active">Home</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Find a doctor</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Apps</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Testimonials</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">About us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <button class="burger header__burger js-menu-btn" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
       </div>
@@ -71,72 +80,91 @@
       <section class="services">
         <div class="container">
           <div class="services__inner">
-            <h2 class="services__title">Our services</h2>
+            <h2 class="h2 h2_center services__title">Our services</h2>
             <div class="services__desc">
               <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
             </div>
-            <div class="swiper-container services-slider services__slider">
-              <div class="swiper-wrapper services-slider__wrapper">
-                <div class="swiper-slide services-slider__slide">
-                  <div class="services-slider__icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-1.svg" data-srcset="" alt="" class="lazyload " />
+            <div class="services__slider">
+              <div class="swiper-container services-slider js-services-slider">
+                <div class="swiper-wrapper services-slider__wrapper">
+                  <div class="swiper-slide services-slider__slide">
+                    <div class="service-card">
+                      <div class="service-card__icon">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-1.svg" data-srcset="" alt="" class="lazyload " />
+                      </div>
+                      <h3 class="h3 service-card__title">Search doctor</h3>
+                      <div class="service-card__text">
+                        <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="h3 services-slider__title">Search doctor</h3>
-                  <div class="service-slider__text">
-                    <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                  <div class="swiper-slide services-slider__slide">
+                    <div class="service-card">
+                      <div class="service-card__icon">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-2.svg" data-srcset="" alt="" class="lazyload " />
+                      </div>
+                      <h3 class="h3 service-card__title">Online pharmacy</h3>
+                      <div class="service-card__text">
+                        <p>Buy your medicines with our mobile application with a simple delivery system</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide services-slider__slide">
+                    <div class="service-card">
+                      <div class="service-card__icon">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-3.svg" data-srcset="" alt="" class="lazyload " />
+                      </div>
+                      <h3 class="h3 service-card__title">Consultation</h3>
+                      <div class="service-card__text">
+                        <p>Free consultation with our trusted doctors and get the best recomendations</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide services-slider__slide">
+                    <div class="service-card">
+                      <div class="service-card__icon">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-4.svg" data-srcset="" alt="" class="lazyload " />
+                      </div>
+                      <h3 class="h3 service-card__title">Details info</h3>
+                      <div class="service-card__text">
+                        <p>Free consultation with our trusted doctors and get the best recomendations</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide services-slider__slide">
+                    <div class="service-card">
+                      <div class="service-card__icon">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-5.svg" data-srcset="" alt="" class="lazyload " />
+                      </div>
+                      <h3 class="h3 service-card__title">Emergency care</h3>
+                      <div class="service-card__text">
+                        <p>You can get 24/7 urgent care for yourself or your children and your lovely family</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide services-slider__slide">
+                    <div class="service-card">
+                      <div class="service-card__icon">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-6.svg" data-srcset="" alt="" class="lazyload " />
+                      </div>
+                      <h3 class="h3 service-card__title">Tracking</h3>
+                      <div class="service-card__text">
+                        <p>Track and save your medical history and health data</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide services-slider__slide">
-                  <div class="services-slider__icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-2.svg" data-srcset="" alt="" class="lazyload " />
-                  </div>
-                  <h3 class="h3 services-slider__title">Online pharmacy</h3>
-                  <div class="service-slider__text">
-                    <p>Buy your medicines with our mobile application with a simple delivery system</p>
-                  </div>
-                </div>
-                <div class="swiper-slide services-slider__slide">
-                  <div class="services-slider__icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-3.svg" data-srcset="" alt="" class="lazyload " />
-                  </div>
-                  <h3 class="h3 services-slider__title">Consultation</h3>
-                  <div class="service-slider__text">
-                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
-                  </div>
-                </div>
-                <div class="swiper-slide services-slider__slide">
-                  <div class="services-slider__icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-4.svg" data-srcset="" alt="" class="lazyload " />
-                  </div>
-                  <h3 class="h3 services-slider__title">Details info</h3>
-                  <div class="service-slider__text">
-                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
-                  </div>
-                </div>
-                <div class="swiper-slide services-slider__slide">
-                  <div class="services-slider__icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-5.svg" data-srcset="" alt="" class="lazyload " />
-                  </div>
-                  <h3 class="h3 services-slider__title">Emergency care</h3>
-                  <div class="service-slider__text">
-                    <p>You can get 24/7 urgent care for yourself or your children and your lovely family</p>
-                  </div>
-                </div>
-                <div class="swiper-slide services-slider__slide">
-                  <div class="services-slider__icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/service-6.svg" data-srcset="" alt="" class="lazyload " />
-                  </div>
-                  <h3 class="h3 services-slider__title">Tracking</h3>
-                  <div class="service-slider__text">
-                    <p>Track and save your medical history and health data</p>
-                  </div>
-                </div>
+              </div>
+              <div class="services__dots">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/dots.svg" data-srcset="" alt="" class="lazyload " />
+              </div>
+              <div class="services__bg">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-3/bg.svg" data-srcset="" alt="" class="lazyload " />
               </div>
             </div>
             <div class="services__btn">
               <a href="#" class="button">Learn more</a>
             </div>
-            <div class="services__bg"></div>
           </div>
         </div>
       </section>
@@ -171,7 +199,7 @@
                 <p>Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
               </div>
               <div class="text-image__btn">
-                <a href="#" class="button button_download"><span>Learn more</span>
+                <a href="#" class="button button_download"><span>Download</span>
                   <svg class="icon icon-download">
                     <use xlink:href="img/sprite.svg#icon-download"></use>
                   </svg>

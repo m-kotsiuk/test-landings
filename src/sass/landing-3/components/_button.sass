@@ -1,0 +1,49 @@
+.button
+	display: inline-block
+	border: 1px solid $colorPrimary
+	font-size: 16px
+	padding: 10px 25px
+	color: $colorPrimary
+	background-color: $colorBg
+	font-weight: 700
+	border-radius: 25px
+	transition: color 0.25s, border 0.25s
+
+	.icon
+		fill: $colorPrimary
+		transition: fill 0.25s
+
+	+hov
+		color: $colorBg
+		background-color: $colorPrimary
+
+		.icon
+			fill: $colorBg
+
+	+sm
+		font-size: 18px
+		padding: 12px 50px
+		border-radius: 55px
+
+
+	&_primary
+		padding: 10px 25px
+		color: $colorBg
+		background-color: $colorPrimary
+
+		+hov
+			color: $colorPrimary
+			background-color: $colorBg
+
+		+sm
+			padding: 12px 38px
+
+
+	&_download
+		.icon
+			position: relative
+			top: 2px
+			width: 15px
+			height: 15px
+
+

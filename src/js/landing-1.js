@@ -1,6 +1,6 @@
 import 'lazysizes';
 import 'moment';
-import menu from './landing-1/_menu';
+import menu from './shared/_menu';
 import tabSliders from './shared/_tabSliders';
 import dropdowns from './landing-1/_dropdowns';
 import accordions from './landing-1/_accordions';

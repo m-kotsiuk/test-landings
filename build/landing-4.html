@@ -162,7 +162,7 @@
               </div>
             </div>
             <div class="section-video__right">
-              <button type="button" class="video js-video-btn">
+              <button type="button" class="video js-modal-link" data-modal="video">
                 <span class="video__img">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/video.jpg" data-srcset="img/landing-4/video-2x.jpg 2x" alt="" class="lazyload " />
                 </span>
@@ -193,7 +193,7 @@
             </div>
             <div class="section-advants__slider">
               <div class="tabs-slider js-tabs-slider">
-                <div class="swiper-container tabs-slider__tablinks">
+                <div class="swiper-container tabs-slider__tablinks js-tabs-slider-links">
                   <div class="swiper-wrapper tabs-slider__tablinks-wrapper">
                     <div class="swiper-slide tabs-slider__tablink-slide">Productivity</div>
                     <div class="swiper-slide tabs-slider__tablink-slide">Manangement</div>
@@ -201,7 +201,19 @@
                     <div class="swiper-slide tabs-slider__tablink-slide">Payment</div>
                   </div>
                 </div>
-                <div class="swiper-container tabs-slider__tabcontents">
+                <div class="swiper-container tabs-slider__tabcontents js-tabs-slider-slides">
+                  <div class="tabs-slider__arrows">
+                    <button type="button" class="tabs-slider__arrow tabs-slider__arrow_prev js-tabs-slider-prev">
+                      <svg class="icon icon-triangle-right">
+                        <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="tabs-slider__arrow tabs-slider__arrow_next js-tabs-slider-next">
+                      <svg class="icon icon-triangle-right">
+                        <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                      </svg>
+                    </button>
+                  </div>
                   <div class="swiper-wrapper tabs-slider__tabcontents-wrapper">
                     <div class="swiper-slide tabs-slider__tabcontents-slide">
                       <p>Silent sir say desire fat him letter. Whatever settling goodness too and honoured she building answered her. Strongly thoughts remember mr to do consider.</p>
@@ -231,23 +243,39 @@
             <h3 class="h3 section-solutions__subtitle">Make your life easy, get a better way to communicate.</h3>
             <div class="section-solutions__solutions">
               <div class="solution">
-                <div class="solution__icon">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/p-heart.svg" data-srcset="" alt="" class="lazyload " />
+                <div class="solution__top">
+                  <div class="solution__icon">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/p-heart.svg" data-srcset="" alt="" class="lazyload " />
+                  </div>
+                  <h4 class="solution__title">One Platform, <strong>Solves Everything</strong></h4>
+                  <div class="solution__desc">
+                    <p>Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>
+                  </div>
                 </div>
-                <h4 class="solution__title">One Platform, <strong>Solves Everything</strong></h4>
-                <div class="solution__desc"></div>
                 <div class="solution__btn">
-                  <a href="#" class="link-more">Get xPider Now</a>
+                  <a href="#" class="link-more link-more_black"><span>Get xPider Now</span>
+                    <svg class="icon icon-arrow-right">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
               <div class="solution">
-                <div class="solution__icon">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/grid.svg" data-srcset="" alt="" class="lazyload " />
+                <div class="solution__top">
+                  <div class="solution__icon">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/grid.svg" data-srcset="" alt="" class="lazyload " />
+                  </div>
+                  <h4 class="solution__title">Fastest Management, <strong>Easy to Organize</strong></h4>
+                  <div class="solution__desc">
+                    <p>Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>
+                  </div>
                 </div>
-                <h4 class="solution__title">Fastest Management, <strong>Easy to Organize</strong></h4>
-                <div class="solution__desc"></div>
                 <div class="solution__btn">
-                  <a href="#" class="link-more">Find out more</a>
+                  <a href="#" class="link-more link-more_black"><span>Find out more</span>
+                    <svg class="icon icon-arrow-right">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -261,38 +289,40 @@
           <div class="section-features__inner">
             <h2 class="h2 section-features__title">More than a software</h2>
             <h3 class="h3 section-features__subtitle">The proper guide that helps you to unlock the real potential.</h3>
-            <div class="section__features__img">
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/guide.jpg" data-srcset="img/landing-4/guide-2x.jpg 2x" alt="" class="lazyload " />
-            </div>
-            <div class="section-features__features">
-              <div class="section-features__feature">
-                <div class="section-features__feature-top">
-                  <div class="section-features__feature-icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/book-open.svg" data-srcset="" alt="" class="lazyload " />
+            <div class="section-features__content">
+              <div class="section-features__img">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/guide.jpg" data-srcset="img/landing-4/guide-2x.jpg 2x" alt="" class="lazyload " />
+              </div>
+              <div class="section-features__features">
+                <div class="section-features__feature">
+                  <div class="section-features__feature-top">
+                    <div class="section-features__feature-icon">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/book-open.svg" data-srcset="" alt="" class="lazyload " />
+                    </div>
+                    <h4 class="section-features__feature-title">Installation Guide</h4>
                   </div>
-                  <div class="section-features__feature-title">Installation Guide</div>
                   <div class="section-features__feature-desc">
                     <p>No more Mulitple Platforms. Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>
                   </div>
                 </div>
-              </div>
-              <div class="section-features__feature">
-                <div class="section-features__feature-top">
-                  <div class="section-features__feature-icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/phone.svg" data-srcset="" alt="" class="lazyload " />
+                <div class="section-features__feature">
+                  <div class="section-features__feature-top">
+                    <div class="section-features__feature-icon">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/phone.svg" data-srcset="" alt="" class="lazyload " />
+                    </div>
+                    <h4 class="section-features__feature-title">Live call support</h4>
                   </div>
-                  <div class="section-features__feature-title">Live call support</div>
                   <div class="section-features__feature-desc">
                     <p>No more Mulitple Platforms. Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>
                   </div>
                 </div>
-              </div>
-              <div class="section-features__feature">
-                <div class="section-features__feature-top">
-                  <div class="section-features__feature-icon">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/preferences-circle.svg" data-srcset="" alt="" class="lazyload " />
+                <div class="section-features__feature">
+                  <div class="section-features__feature-top">
+                    <div class="section-features__feature-icon">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-4/preferences-circle.svg" data-srcset="" alt="" class="lazyload " />
+                    </div>
+                    <h4 class="section-features__feature-title">Easy setup process</h4>
                   </div>
-                  <div class="section-features__feature-title">Easy setup process</div>
                   <div class="section-features__feature-desc">
                     <p>No more Mulitple Platforms. Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>
                   </div>
@@ -477,6 +507,18 @@
         </div>
       </footer>
       <!-- end footer -->
+      <!-- <!-- begin modal -->
+      <div class="modal js-modal" data-modal="video">
+        <div class="modal__inner">
+          <div class="modal__content">
+            <div class="modal__body js-modal-body">
+              <div class="modal__video js-modal-video" data-video="https://www.youtube.com/embed/EngW7tLk6R8"></div>
+              <button type="button" class="modal__close-btn js-modal-close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

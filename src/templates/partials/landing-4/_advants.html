@@ -41,7 +41,7 @@
 
       <div class="section-advants__slider">
         <div class="tabs-slider js-tabs-slider">
-          <div class="swiper-container tabs-slider__tablinks">
+          <div class="swiper-container tabs-slider__tablinks js-tabs-slider-links">
             <div class="swiper-wrapper tabs-slider__tablinks-wrapper">
               {% for slide in slides %}
               <div class="swiper-slide tabs-slider__tablink-slide">{{ slide.title }}</div>
@@ -49,7 +49,18 @@
             </div>
           </div>
 
-          <div class="swiper-container tabs-slider__tabcontents">
+          <div class="swiper-container tabs-slider__tabcontents js-tabs-slider-slides">
+
+            <div class="tabs-slider__arrows">
+              <button type="button" class="tabs-slider__arrow tabs-slider__arrow_prev js-tabs-slider-prev">
+                {{ mixins.icon('triangle-right') }}
+              </button>
+              <button type="button" class="tabs-slider__arrow tabs-slider__arrow_next js-tabs-slider-next">
+                {{ mixins.icon('triangle-right') }}
+              </button>
+            </div>
+
+
             <div class="swiper-wrapper tabs-slider__tabcontents-wrapper">
               {% for slide in slides %}
                <div class="swiper-slide tabs-slider__tabcontents-slide">
@@ -57,6 +68,7 @@
                </div>
               {% endfor %}
             </div>
+
           </div>
         </div>
       </div>

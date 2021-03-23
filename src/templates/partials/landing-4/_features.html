@@ -23,29 +23,32 @@
       <h2 class="h2 section-features__title">More than a software</h2>
       <h3 class="h3 section-features__subtitle">The proper guide that helps you to unlock the real potential.</h3>
 
-      <div class="section__features__img">
-         {{ mixins.lazyImage({
-            src: 'img/landing-4/guide.jpg',
-            srcset: 'img/landing-4/guide-2x.jpg 2x'
-          }) }}
-      </div>
+      <div class="section-features__content">
+         <div class="section-features__img">
+          {{ mixins.lazyImage({
+              src: 'img/landing-4/guide.jpg',
+              srcset: 'img/landing-4/guide-2x.jpg 2x'
+            }) }}
+        </div>
 
-      <div class="section-features__features">
-        {% for feature in features %}
-          <div class="section-features__feature">
-            <div class="section-features__feature-top">
-               <div class="section-features__feature-icon">
-                {{ mixins.lazyImage({
-                  src: feature.icon
-                }) }}
+        <div class="section-features__features">
+          {% for feature in features %}
+            <div class="section-features__feature">
+              <div class="section-features__feature-top">
+                <div class="section-features__feature-icon">
+                  {{ mixins.lazyImage({
+                    src: feature.icon
+                  }) }}
+                </div>
+                <h4 class="section-features__feature-title">{{ feature.title }}</h4>
+
               </div>
-              <div class="section-features__feature-title">{{ feature.title }}</div>
               <div class="section-features__feature-desc">
                 <p>No more Mulitple Platforms. Now it had seen unable uneasy. Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.</p>
               </div>
             </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

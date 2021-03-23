@@ -9,7 +9,7 @@ import selects from './landing-1/_selects';
 import datepickers from './landing-1/_datepickers';
 import counterFields from './landing-1/_counterFields';
 import orderForms from './landing-1/_orderForms';
-import modals from './landing-1/_modals';
+import modals from './shared/_modals';
 
 
 

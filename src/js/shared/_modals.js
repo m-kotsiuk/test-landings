@@ -31,9 +31,24 @@ const fadeOut = (el, cb) => {
   })();
 };
 
+const initVideo = el => {
+  const iframe = document.createElement('iframe');
+  iframe.src = el.dataset.video;
+  el.appendChild(iframe);
+
+};
+
+
 const openModal = el => {
   document.documentElement.classList.add('no-overflow');
   document.body.classList.add('no-overflow');
+
+  const video = el.querySelector('.js-modal-video');
+
+  if (video) {
+    initVideo(video);
+  }
+
 
   fadeIn(el);
 };
@@ -43,6 +58,14 @@ const closeModal = el => {
   fadeOut(el, () => {
     document.documentElement.classList.remove('no-overflow');
     document.body.classList.remove('no-overflow');
+
+    const video = el.querySelector('.js-modal-video iframe');
+
+    if (video) {
+      video.parentNode.removeChild(video);
+    }
+
+
   });
 };
 

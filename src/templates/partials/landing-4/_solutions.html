@@ -25,17 +25,20 @@
       <div class="section-solutions__solutions">
         {% for solution in solutions %}
         <div class="solution">
-          <div class="solution__icon">
-              {{ mixins.lazyImage({
-                src: solution.icon
-              }) }}
-          </div>
-          <h4 class="solution__title">{{ solution.title | safe }}</h4>
+            <div class="solution__top">
+              <div class="solution__icon">
+                {{ mixins.lazyImage({
+                  src: solution.icon
+                }) }}
+            </div>
+            <h4 class="solution__title">{{ solution.title | safe }}</h4>
 
-          <div class="solution__desc">{{ solution.desc | safe }}</div>
+            <div class="solution__desc">{{ solution.text | safe }}</div>
+          </div>
+
 
           <div class="solution__btn">
-            <a href="#" class="link-more">{{ solution.link }}</a>
+            <a href="#" class="link-more link-more_black"><span>{{ solution.link | safe }}</span>{{ mixins.icon('arrow-right') }}</a>
           </div>
         </div>
         {% endfor %}

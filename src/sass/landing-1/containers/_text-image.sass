@@ -187,6 +187,19 @@
 		#{$this}__text-inner
 			font-size: 18px
 
+		#{$this}__image-inner
+			position: relative
+			padding-bottom: 70.5%
+
+			img
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				width: 100%
+				height: 100%
+				object-fit: contain
+
 
 	&_reversed-notice
 		margin-bottom: 35px
@@ -213,14 +226,14 @@
 					margin-left: -40%
 					margin-top: -5%
 
-
-
 			+md
 				max-width: none
+				min-height: 547px
 
 				img
 					margin-left: -30%
 					margin-top: 0
+
 
 		#{$this}__image-bg
 			width: 120%

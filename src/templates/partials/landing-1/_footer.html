@@ -22,7 +22,7 @@
 
 
       <div class="footer__col">
-        <div class="footer__link">
+        <div class="footer__link footer__tel">
           <a href="tel:+4962153399112">+49(621) <strong>53399112</strong></a>
         </div>
         <div class="footer__link">
@@ -51,21 +51,29 @@
           <div class="footer__icon-row">
             {% for social in socials %}
             <a href="#" class="footer__icon">
-              <img src="{{ social }}" alt="" />
+              {{ mixins.lazyImage({
+                src: social
+              }) }}
             </a>
             {% endfor %}
           </div>
           <div class="footer__icon-row">
             <span class="footer__icon">
-              <img src="img/landing-1/footer/visa.svg" alt="" />
+              {{ mixins.lazyImage({
+                src: 'img/landing-1/footer/visa.svg'
+              }) }}
             </span>
             <span class="footer__icon">
-              <img src="img/landing-1/footer/mastercard.svg" alt="" />
+              {{ mixins.lazyImage({
+                src: 'img/landing-1/footer/mastercard.svg'
+              }) }}
             </span>
           </div>
           <div class="footer__icon-row">
             <span class="footer__icon">
-              <img src="img/landing-1/footer/security.svg" alt="" />
+              {{ mixins.lazyImage({
+                src: 'img/landing-1/footer/security.svg'
+              }) }}
             </span>
           </div>
       </div>

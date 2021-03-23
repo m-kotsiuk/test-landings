@@ -13,8 +13,7 @@ const initSlider = el => {
 
   const navLinks = [...nav.querySelectorAll('.js-tab-slider-link')];
 
-
-  const swiper = new Swiper(el, {
+  const options = {
     init: false,
     touchReleaseOnEdges: true,
     loop: true,
@@ -33,12 +32,25 @@ const initSlider = el => {
         });
       }
     }
-  });
+  };
+
+  if (el.dataset.noSwipe) {
+    options.noSwipingClass = 'swiper-slide';
+  }
+
+  if (el.dataset.finite) {
+    options.loop = false;
+  }
+
+
+  const swiper = new Swiper(el,  options);
 
   swiper.init();
 
   navLinks.forEach((navLink, i) => {
-    navLink.addEventListener('click', () => {
+
+    navLink.addEventListener('click', event => {
+      event.preventDefault();
       swiper.slideToLoop(i);
     });
   });

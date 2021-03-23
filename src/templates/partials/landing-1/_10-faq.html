@@ -23,13 +23,13 @@
 <!-- begin section-faq -->
 <section class="section-faq">
   <div class="container">
-    <h2 class="h2 section-faq__title">FAQ</h2>
-    <ul class="accordion section-faq__accordion js-acc">
+    <h2 class="h2 section-faq__title  wow fadeInUp">FAQ</h2>
+    <ul class="accordion section-faq__accordion js-acc  wow fadeInUp">
       {% for item in faq %}
       <li class="accordion__item js-acc-item">
         <button type="button" class="accordion__btn js-acc-btn">
           <span class="accordion__title">{{ item.title }}</span>
-          <span type="button" class="accordion__icon">{{ mixins.icon('chevron-up') }}</span>
+          <span class="accordion__icon">{{ mixins.icon('chevron-up') }}</span>
         </button>
         <div class="accordion__desc js-acc-content">
           <div class="accordion__desc-inner">
@@ -41,8 +41,8 @@
       {% endfor %}
     </ul>
 
-    <div class="section-faq__btn">
-      <button type="button" class="button js-modal-btn" data-modal="modal-1">Try for free</button>
+    <div class="section-faq__btn  wow fadeInUp">
+      <button type="button" class="button js-modal-link" data-modal="main">Try for free</button>
     </div>
   </div>
 </section>

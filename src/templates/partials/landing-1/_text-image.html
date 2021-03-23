@@ -6,26 +6,26 @@
       <div class="text-image__text">
         {% if block.text.title %}
           {% if block.primary %}
-          <h1 class="h1 text-image__title">{{ block.text.title | safe }}</h1>
+          <h1 class="h1 text-image__title wow fadeInUp">{{ block.text.title | safe }}</h1>
           {% else %}
-          <h2 class="h2 text-image__title">{{ block.text.title | safe }}</h2>
+          <h2 class="h2 text-image__title wow fadeInUp">{{ block.text.title | safe }}</h2>
           {% endif %}
         {% endif %}
 
         {% if block.text.text  %}
-        <div class="text-image__text-inner">
+        <div class="text-image__text-inner  wow fadeInUp">
           {{ block.text.text | safe }}
         </div>
         {% endif %}
 
         {% if block.text.btn  %}
-        <div class="text-image__btn">
+        <div class="text-image__btn  wow fadeInUp">
           <button type="button" class="button js-modal-link" data-modal="main">{{ block.text.btn }}</button>
         </div>
         {% endif %}
 
          {% if block.img.slides %}
-          <div class="nav-list text-image__nav-list js-tab-slider-nav" data-slider="text-image">
+          <div class="nav-list text-image__nav-list js-tab-slider-nav wow fadeInUp" data-slider="text-image">
             <ul class="nav-list__inner">
             {% for i in range(0, block.img.slides.length) %}
             <li class="nav-list__item">
@@ -39,7 +39,7 @@
 
       </div>
 
-      <div class="text-image__image">
+      <div class="text-image__image  wow fadeInUp">
         {% if block.img.bg %}
         <div class="text-image__image-bg">
           {{ mixins.lazyImage({
@@ -63,7 +63,7 @@
         {% endif %}
 
         {% if block.img.card %}
-        <div class="card text-image__card">
+        <div class="card text-image__card  wow fadeInUp">
           <div class="card__header">
             <div class="card__icon">{{ mixins.icon('card-icon') }}</div>
             <div class="card__title">Notice</div>
@@ -76,7 +76,7 @@
 
 
         {% if block.img.slides %}
-          <div class="swiper-container text-image__slider js-tab-slider" data-slider="text-image">
+          <div class="swiper-container text-image__slider js-tab-slider wow fadeInUp" data-slider="text-image">
             <div class="swiper-wrapper text-image__slides">
               {% for slide in  block.img.slides %}
               <div class="swiper-slide text-image__slide">

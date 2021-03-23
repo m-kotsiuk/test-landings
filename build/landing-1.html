@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="zxx">
   <head>
     <meta charset="utf-8" />
     <title>Front Test</title>
@@ -35,7 +35,7 @@
                       </a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link menu__link_icon">
+                      <a href="#" class="menu__link menu__link_icon js-modal-link" data-modal="main">
                         <svg class="icon icon-mobile-vibration">
                           <use xlink:href="img/sprite.svg#icon-mobile-vibration"></use>
                         </svg> Call us</a>
@@ -74,16 +74,16 @@
         <div class="container">
           <div class="text-image__inner">
             <div class="text-image__text">
-              <h1 class="h1 text-image__title">At vero eos et accusamus et iusto odio dignissimos ducimus</h1>
-              <div class="text-image__text-inner">
+              <h1 class="h1 text-image__title wow fadeInUp">At vero eos et accusamus et iusto odio dignissimos ducimus</h1>
+              <div class="text-image__text-inner  wow fadeInUp">
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
                 <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.</p>
               </div>
-              <div class="text-image__btn">
+              <div class="text-image__btn  wow fadeInUp">
                 <button type="button" class="button js-modal-link" data-modal="main">Try for free</button>
               </div>
             </div>
-            <div class="text-image__image">
+            <div class="text-image__image  wow fadeInUp">
               <div class="text-image__image-bg">
                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/bgs/bg-1.svg" data-srcset="" alt="" class="lazyload " />
               </div>
@@ -101,15 +101,15 @@
         <div class="container">
           <div class="text-image__inner">
             <div class="text-image__text">
-              <h2 class="h2 text-image__title">Temporibus autem quibusdam et aut officiis debitis</h2>
-              <div class="text-image__text-inner">
+              <h2 class="h2 text-image__title wow fadeInUp">Temporibus autem quibusdam et aut officiis debitis</h2>
+              <div class="text-image__text-inner  wow fadeInUp">
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
               </div>
-              <div class="text-image__btn">
+              <div class="text-image__btn  wow fadeInUp">
                 <button type="button" class="button js-modal-link" data-modal="main">Try for free</button>
               </div>
             </div>
-            <div class="text-image__image">
+            <div class="text-image__image  wow fadeInUp">
               <div class="text-image__image-bg">
                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/bgs/bg-2.svg" data-srcset="" alt="" class="lazyload " />
               </div>
@@ -117,7 +117,7 @@
                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/watch.png" data-srcset="img/landing-1/watch-2x.png 2x" alt="" class="lazyload img-desk" />
                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/watch.png" data-srcset="" alt="" class="lazyload img-mob" />
               </div>
-              <div class="card text-image__card">
+              <div class="card text-image__card  wow fadeInUp">
                 <div class="card__header">
                   <div class="card__icon">
                     <svg class="icon icon-card-icon">
@@ -136,7 +136,7 @@
       </section>
       <!-- end text-image -->
       <!-- begin section-calculator-->
-      <section class="section-calculator">
+      <section class="section-calculator wow fadeInUp">
         <div class="container">
           <div class="section-calculator__inner">
             <div class="calculator">
@@ -234,8 +234,8 @@
       <section class="section-steps">
         <div class="container">
           <div class="section-steps__inner">
-            <h2 class="h2 section-steps__title">How it works</h2>
-            <h3 class="section-steps__subtitle">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+            <h2 class="h2 section-steps__title wow fadeInUp">How it works</h2>
+            <h3 class="section-steps__subtitle wow fadeInUp">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
             <div class="slider-steps">
               <div class="slider-steps__progress js-tab-slider-nav" data-slider="steps">
                 <button type="button" class="slider-steps__point js-tab-slider-link">
@@ -255,7 +255,7 @@
                   <span class="slider-steps__text">Step 4</span>
                 </button>
               </div>
-              <div class="swiper-container slider-steps__slider js-tab-slider" data-slider="steps">
+              <div class="swiper-container slider-steps__slider js-tab-slider wow fadeInUp" data-no-swipe="1" data-finite="1" data-slider="steps">
                 <div class="swiper-wrapper slider-steps__wrapper">
                   <div class="swiper-slide steps-slide slider-steps__slide">
                     <h4 class="h3 steps-slide__title">Step 1</h4>
@@ -278,6 +278,7 @@
                           <li class="nav-list__item">
                             <button type="button" class="nav-list__link  js-tab-slider-link">Sed ut perspiciatis</button>
                           </li>
+                        </ul>
                       </div>
                       <div class="swiper-container steps-slide__tabcontents js-tab-slider" data-slider="steps-inner-0">
                         <div class="swiper-wrapper">
@@ -348,6 +349,7 @@
                           <li class="nav-list__item">
                             <button type="button" class="nav-list__link  js-tab-slider-link">Sed ut perspiciatis</button>
                           </li>
+                        </ul>
                       </div>
                       <div class="swiper-container steps-slide__tabcontents js-tab-slider" data-slider="steps-inner-1">
                         <div class="swiper-wrapper">
@@ -421,6 +423,7 @@
                           <li class="nav-list__item">
                             <button type="button" class="nav-list__link  js-tab-slider-link">Sed ut perspiciatis</button>
                           </li>
+                        </ul>
                       </div>
                       <div class="swiper-container steps-slide__tabcontents js-tab-slider" data-slider="steps-inner-2">
                         <div class="swiper-wrapper">
@@ -489,11 +492,12 @@
                             <button type="button" class="nav-list__link  js-tab-slider-link">Ut enim ad minima</button>
                           </li>
                           <li class="nav-list__item">
-                            <button type="button" class="nav-list__link  js-tab-slider-link">Quis autem vel</button>
+                            <button type="button" class="nav-list__link  js-tab-slider-link">Quis autem</button>
                           </li>
                           <li class="nav-list__item">
                             <button type="button" class="nav-list__link  js-tab-slider-link">Sed ut perspiciatis</button>
                           </li>
+                        </ul>
                       </div>
                       <div class="swiper-container steps-slide__tabcontents js-tab-slider" data-slider="steps-inner-3">
                         <div class="swiper-wrapper">
@@ -526,11 +530,6 @@
                           </div>
                           <div class="swiper-slide steps-slide__tabcontent">
                             <p>Nemo enim ipsam voluptatem, quia voluptas sit</p>
-                            <ol>
-                              <li>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium</li>
-                              <li>Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</li>
-                              <li>Fet enim ad minima veniam, quis nostrum exercitationem ullam corporis</li>
-                            </ol>
                             <p><strong>Notice:</strong><br />Dolorem ipsum, quia dolor sit amet consectetu</p>
                           </div>
                           <div class="swiper-slide steps-slide__tabcontent">
@@ -557,10 +556,10 @@
       <section class="section-reviews">
         <div class="container">
           <div class="section-reviews__inner">
-            <h2 class="h2 section-reviews__title">Reviews</h2>
-            <h3 class="section-reviews__subtitle">Nam libero tempore, cum soluta nobis est</h3>
+            <h2 class="h2 section-reviews__title wow fadeInUp">Reviews</h2>
+            <h3 class="section-reviews__subtitle wow fadeInUp">Nam libero tempore, cum soluta nobis est</h3>
             <div class="slider-reviews section-reviews__slider js-reviews-slider">
-              <div class="swiper-container slider-reviews__inner js-reviews-slider-el">
+              <div class="swiper-container slider-reviews__inner  wow fadeInUp js-reviews-slider-el">
                 <div class="swiper-wrapper slider-reviews__wrapper">
                   <div class="swiper-slide slider-reviews__slide">
                     <div class="testimonial">
@@ -981,7 +980,7 @@
                 </div>
                 <div class="slider-reviews__nav js-reviews-slider-nav"></div>
               </div>
-              <div class="slider-reviews__btn">
+              <div class="slider-reviews__btn wow fadeInUp">
                 <a href="#" class="link">Read more</a>
               </div>
             </div>
@@ -994,11 +993,11 @@
         <div class="container">
           <div class="text-image__inner">
             <div class="text-image__text">
-              <h2 class="h2 text-image__title">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit</h2>
-              <div class="text-image__text-inner">
+              <h2 class="h2 text-image__title wow fadeInUp">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit</h2>
+              <div class="text-image__text-inner  wow fadeInUp">
                 <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
               </div>
-              <div class="nav-list text-image__nav-list js-tab-slider-nav" data-slider="text-image">
+              <div class="nav-list text-image__nav-list js-tab-slider-nav wow fadeInUp" data-slider="text-image">
                 <ul class="nav-list__inner">
                   <li class="nav-list__item">
                     <button type="button" class="nav-list__link is-active  js-tab-slider-link">Temporibus autem</button>
@@ -1012,8 +1011,8 @@
                 </ul>
               </div>
             </div>
-            <div class="text-image__image">
-              <div class="swiper-container text-image__slider js-tab-slider" data-slider="text-image">
+            <div class="text-image__image  wow fadeInUp">
+              <div class="swiper-container text-image__slider js-tab-slider wow fadeInUp" data-slider="text-image">
                 <div class="swiper-wrapper text-image__slides">
                   <div class="swiper-slide text-image__slide">
                     <div class="text-image__slide-img">
@@ -1063,8 +1062,8 @@
         <div class="container">
           <div class="text-image__inner">
             <div class="text-image__text">
-              <h2 class="h2 text-image__title">At vero eos et accusamus</h2>
-              <div class="text-image__text-inner">
+              <h2 class="h2 text-image__title wow fadeInUp">At vero eos et accusamus</h2>
+              <div class="text-image__text-inner  wow fadeInUp">
                 <ul>
                   <li>Sed ut perspiciatis, unde omnis iste natus error.</li>
                   <li>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</li>
@@ -1074,7 +1073,7 @@
                 </ul>
               </div>
             </div>
-            <div class="text-image__image">
+            <div class="text-image__image  wow fadeInUp">
               <div class="text-image__image-bg">
                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/bgs/bg-4.svg" data-srcset="" alt="" class="lazyload " />
               </div>
@@ -1092,12 +1091,12 @@
         <div class="container">
           <div class="text-image__inner">
             <div class="text-image__text">
-              <h2 class="h2 text-image__title">Temporibus autem quibusdam et aut officiis debitis</h2>
-              <div class="text-image__text-inner">
+              <h2 class="h2 text-image__title wow fadeInUp">Temporibus autem quibusdam et aut officiis debitis</h2>
+              <div class="text-image__text-inner  wow fadeInUp">
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est.</p>
               </div>
             </div>
-            <div class="text-image__image">
+            <div class="text-image__image  wow fadeInUp">
               <div class="text-image__image-bg">
                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/bgs/bg-5.svg" data-srcset="" alt="" class="lazyload " />
               </div>
@@ -1115,15 +1114,15 @@
         <div class="container">
           <div class="text-image__inner">
             <div class="text-image__text">
-              <div class="text-image__text-inner">
+              <div class="text-image__text-inner  wow fadeInUp">
                 <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
               </div>
             </div>
-            <div class="text-image__image">
+            <div class="text-image__image  wow fadeInUp">
               <div class="text-image__image-bg">
                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/bgs/bg-6.svg" data-srcset="" alt="" class="lazyload " />
               </div>
-              <div class="card text-image__card">
+              <div class="card text-image__card  wow fadeInUp">
                 <div class="card__header">
                   <div class="card__icon">
                     <svg class="icon icon-card-icon">
@@ -1144,12 +1143,12 @@
       <!-- begin section-faq -->
       <section class="section-faq">
         <div class="container">
-          <h2 class="h2 section-faq__title">FAQ</h2>
-          <ul class="accordion section-faq__accordion js-acc">
+          <h2 class="h2 section-faq__title  wow fadeInUp">FAQ</h2>
+          <ul class="accordion section-faq__accordion js-acc  wow fadeInUp">
             <li class="accordion__item js-acc-item">
               <button type="button" class="accordion__btn js-acc-btn">
                 <span class="accordion__title">At vero eos et accusamus et iustosds odio?</span>
-                <span type="button" class="accordion__icon">
+                <span class="accordion__icon">
                   <svg class="icon icon-chevron-up">
                     <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
                   </svg>
@@ -1164,7 +1163,7 @@
             <li class="accordion__item js-acc-item">
               <button type="button" class="accordion__btn js-acc-btn">
                 <span class="accordion__title">Was gehört in eine Facharbeit?</span>
-                <span type="button" class="accordion__icon">
+                <span class="accordion__icon">
                   <svg class="icon icon-chevron-up">
                     <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
                   </svg>
@@ -1180,7 +1179,7 @@
             <li class="accordion__item js-acc-item">
               <button type="button" class="accordion__btn js-acc-btn">
                 <span class="accordion__title">Wie lange braucht man, um eine Facharbeit zu schreiben?</span>
-                <span type="button" class="accordion__icon">
+                <span class="accordion__icon">
                   <svg class="icon icon-chevron-up">
                     <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
                   </svg>
@@ -1193,8 +1192,8 @@
               </div>
             </li>
           </ul>
-          <div class="section-faq__btn">
-            <button type="button" class="button js-modal-btn" data-modal="modal-1">Try for free</button>
+          <div class="section-faq__btn  wow fadeInUp">
+            <button type="button" class="button js-modal-link" data-modal="main">Try for free</button>
           </div>
         </div>
       </section>
@@ -1232,7 +1231,7 @@
               </ul>
             </div>
             <div class="footer__col">
-              <div class="footer__link">
+              <div class="footer__link footer__tel">
                 <a href="tel:+4962153399112">+49(621) <strong>53399112</strong></a>
               </div>
               <div class="footer__link"> Call us! </div>
@@ -1339,29 +1338,29 @@
             <div class="footer__col">
               <div class="footer__icon-row">
                 <a href="#" class="footer__icon">
-                  <img src="img/landing-1/footer/facebook.svg" alt="" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/footer/facebook.svg" data-srcset="" alt="" class="lazyload " />
                 </a>
                 <a href="#" class="footer__icon">
-                  <img src="img/landing-1/footer/instagram.svg" alt="" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/footer/instagram.svg" data-srcset="" alt="" class="lazyload " />
                 </a>
                 <a href="#" class="footer__icon">
-                  <img src="img/landing-1/footer/youtube.svg" alt="" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/footer/youtube.svg" data-srcset="" alt="" class="lazyload " />
                 </a>
                 <a href="#" class="footer__icon">
-                  <img src="img/landing-1/footer/pinterest.svg" alt="" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/footer/pinterest.svg" data-srcset="" alt="" class="lazyload " />
                 </a>
               </div>
               <div class="footer__icon-row">
                 <span class="footer__icon">
-                  <img src="img/landing-1/footer/visa.svg" alt="" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/footer/visa.svg" data-srcset="" alt="" class="lazyload " />
                 </span>
                 <span class="footer__icon">
-                  <img src="img/landing-1/footer/mastercard.svg" alt="" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/footer/mastercard.svg" data-srcset="" alt="" class="lazyload " />
                 </span>
               </div>
               <div class="footer__icon-row">
                 <span class="footer__icon">
-                  <img src="img/landing-1/footer/security.svg" alt="" />
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/landing-1/footer/security.svg" data-srcset="" alt="" class="lazyload " />
                 </span>
               </div>
             </div>
@@ -1406,7 +1405,7 @@
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
-    <script type="text/javascript" src="js/landing-1.js"></script>
+    <script src="js/landing-1.js"></script>
     <!-- END scripts -->
   </body>
 </html>

@@ -1,5 +1,6 @@
 import 'lazysizes';
 import 'moment';
+import WOW from 'wow.js';
 import menu from './shared/_menu';
 import tabSliders from './shared/_tabSliders';
 import dropdowns from './shared/_dropdowns';
@@ -24,5 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   counterFields();
   orderForms();
   modals();
+
+  new WOW().init();
 });
 

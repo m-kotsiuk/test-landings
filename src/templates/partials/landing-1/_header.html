@@ -5,7 +5,8 @@
     },
     {
       icon: 'mobile-vibration',
-      text: 'Call us'
+      text: 'Call us',
+      modal: true
     },
     {
       text: 'About'
@@ -38,8 +39,16 @@
             <ul class="menu__list">
               {% for item in menuItems %}
               {% set withIcon = ' menu__link_icon' if item.icon else '' %}
+
               <li class="menu__item">
-                <a href="#" class="menu__link{{ withIcon }}">{% if item.icon %}{{  mixins.icon(item.icon) }}{% endif %}{{ item.text }}</a>
+                <a
+                  href="#"
+                  class="menu__link{{ withIcon }}{% if item.modal %} js-modal-link{% endif %}"
+                  {% if item.modal %}
+                  data-modal="main"
+                  {% endif %}
+
+                >{% if item.icon %}{{  mixins.icon(item.icon) }}{% endif %}{{ item.text }}</a>
               </li>
               {% endfor %}
             </ul>

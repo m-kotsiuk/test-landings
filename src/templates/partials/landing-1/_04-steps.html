@@ -232,14 +232,9 @@
           '
         },
         {
-          title: 'Quis autem vel',
+          title: 'Quis autem',
           content: '
             <p>Nemo enim ipsam voluptatem, quia voluptas sit</p>
-            <ol>
-              <li>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium</li>
-              <li>Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</li>
-              <li>Fet enim ad minima veniam, quis nostrum exercitationem ullam corporis</li>
-            </ol>
             <p><strong>Notice:</strong><br/>Dolorem ipsum, quia dolor sit amet consectetu</p>
           '
         },
@@ -265,8 +260,8 @@
 <section class="section-steps">
   <div class="container">
     <div class="section-steps__inner">
-      <h2 class="h2 section-steps__title">How it works</h2>
-      <h3 class="section-steps__subtitle">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+      <h2 class="h2 section-steps__title wow fadeInUp">How it works</h2>
+      <h3 class="section-steps__subtitle wow fadeInUp">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
       <div class="slider-steps">
         <div class="slider-steps__progress js-tab-slider-nav" data-slider="steps">
           {% for i in range(0, steps.length) %}
@@ -277,7 +272,7 @@
           {% endfor %}
         </div>
 
-        <div class="swiper-container slider-steps__slider js-tab-slider" data-slider="steps">
+        <div class="swiper-container slider-steps__slider js-tab-slider wow fadeInUp" data-no-swipe="1" data-finite="1" data-slider="steps">
           <div class="swiper-wrapper slider-steps__wrapper">
             {% for i in range(0, steps.length) %}
             <div class="swiper-slide steps-slide slider-steps__slide">
@@ -291,6 +286,7 @@
                       <button type="button" class="nav-list__link{% if not j %} is-active{% endif %}  js-tab-slider-link">{{ steps[i].tabs[j].title }}</button>
                     </li>
                     {% endfor %}
+                  </ul>
                 </div>
                 <div class="swiper-container steps-slide__tabcontents js-tab-slider"  data-slider="steps-inner-{{ i }}">
                   <div class="swiper-wrapper">

@@ -6,8 +6,8 @@
       <h3 class="h3 section-testimonials__subtitle">People love xPider.<br/>See some of the stories.</h3>
 
       <div class="section-testimonials__slider">
-        <div class="testimonials-slider">
-          <div class="swiper-container testimonials-slider__texts">
+        <div class="testimonials-slider js-testimonials-slider">
+          <div class="swiper-container testimonials-slider__texts js-testimonials-slides">
             <div class="swiper-wrapper">
              {% for i in range(0, 3) %}
               <div class="swiper-slide">
@@ -28,10 +28,10 @@
               {% endfor %}
             </div>
           </div>
-          <div class="swiper-container testimonials-slider__imgs">
+          <div class="swiper-container testimonials-slider__imgs js-testimonials-imgs">
             <div class="swiper-wrapper">
               {% for i in range(0, 3) %}
-              <div class="swiper-slide">
+              <div class="swiper-slide testimonials-slider__img">
                 {{ mixins.lazyImage({
                     src: 'img/landing-4/client.jpg',
                     srcset: 'img/landing-4/client-2x.jpg 2x'
@@ -39,6 +39,8 @@
               </div>
               {% endfor %}
             </div>
+
+            <div class="testimonials-slider__imgs-nav js-testimonials-nav"></div>
           </div>
         </div>
       </div>

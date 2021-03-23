@@ -1,11 +1,11 @@
 
 {% set bottomLinks = ['Status', 'Privacy &amp; Terms', 'Contact Us'] %}
-{% set socials = ['facebook', 'twitter', 'dribble'] %}
+{% set socials = ['facebook', 'twitter-alt', 'dribble'] %}
 {%
   set cols = [
     {
       name: 'Company',
-      links: ['About Us', 'Careers', 'Blog', 'Press', 'Brand', 'Guidelines']
+      links: ['About Us', 'Careers', 'Blog', 'Press', 'Brand Guidelines']
     },
     {
       name: 'Product',
@@ -17,6 +17,7 @@
     }
   ]
 %}
+{% set langs = ['German', 'Russian', 'Hungarian'] %}
 <!-- begin footer -->
 <footer class="footer">
   <div class="container footer__container">
@@ -42,7 +43,10 @@
       </div>
     </div>
 
-    <div class="footer__bottom">
+
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-container">
       <div class="footer__bottom-links">
         {% for link in bottomLinks %}
         <a href="#" class="footer__bottom-link">{{ link | safe }}</a>
@@ -51,7 +55,18 @@
 
       <div class="footer__bottom-right">
         <div class="footer__langs">
-
+          <div class="dropdown dropdown_top js-dropdown">
+            <button type="button" class="dropdown__btn js-dropdown-btn"><img src="img/landing-4/lang.jpg" class="img-flag" />English</button>
+            <div class="dropdown__wrapper">
+              <div class="dropdown__holder">
+                <div class="dropdown__links">
+                  {% for lang in langs %}
+                  <a href="#" class="dropdown__link js-dropdown-link"><img src="img/landing-4/lang.jpg" class="img-flag" />{{ lang }}</a>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="footer__socials">
@@ -61,6 +76,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </footer>
 <!-- end footer -->

@@ -1,0 +1,45 @@
+.contact-form
+	&__inner
+		margin-bottom: 10px
+		+sm
+			display: flex
+			border-radius: 5px
+			overflow: hidden
+
+
+	&__input
+		display: block
+		width: 100%
+		height: 75px
+		margin-bottom: 20px
+		background-color: $white
+		padding: 20px 25px
+		border-radius: 5px
+
+		+sm
+			max-width: calc(100% - 195px)
+			border-radius: 0
+
+
+		&::placeholder
+			color: #7E8085
+
+
+	&__btn
+		width: 100%
+		border-radius: 5px
+		text-transform: uppercase
+		color: $primary
+		font-weight: 700
+		height: 75px
+		line-height: 78px
+		text-align: center
+		background-color: $white
+		border-left: 1px solid #E7EAEE
+
+		+sm
+			width: 195px
+			border-radius: 0
+	&__text
+		font-size: 14px
+		text-align: center

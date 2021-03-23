@@ -4,6 +4,7 @@ import menu from './shared/_menu';
 import dropdowns from './shared/_dropdowns';
 import modals from './shared/_modals';
 import tabSliders from './landing-4/_tabSliders';
+import testimonials from './landing-4/_testimonials';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   dropdowns();
   modals();
   tabSliders();
+  testimonials();
 });
